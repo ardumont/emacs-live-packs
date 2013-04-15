@@ -43,3 +43,6 @@
 [submodule "caml-pack"]
 	path = caml-pack
 	url = git@github.com:ardumont/caml-pack.git
+[submodule "install-packages-pack"]
+	path = install-packages-pack
+	url = git@github.com:ardumont/install-packages-pack.git
