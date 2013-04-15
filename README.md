@@ -35,7 +35,7 @@ Install [emacs-live](https://github.com/overtone/emacs-live), you won't regret i
 Clone the repository.
 
 ```sh
-git clone git@github.com:ardumont/emacs-live-packs.git
+git clone git@github.com:ardumont/emacs-live-packs.git --recursive
 ```
 
 ## deploy
