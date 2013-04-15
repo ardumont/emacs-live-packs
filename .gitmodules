@@ -40,3 +40,6 @@
 [submodule "nrepl-pack"]
 	path = nrepl-pack
 	url = git@github.com:ardumont/nrepl-pack.git
+[submodule "clojurescript-pack"]
+	path = clojurescript-pack
+	url = git@github.com:ardumont/clojurescript-pack.git
