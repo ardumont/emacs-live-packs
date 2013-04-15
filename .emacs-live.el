@@ -1,16 +1,24 @@
-(live-add-packs '("~/.emacs-live-packs/user-install-packages-pack"
-                  "~/.emacs-live-packs/user-pack"
-                  "~/.emacs-live-packs/user-blog-pack"
-                  "~/.emacs-live-packs/user-haskell-pack"
-                  "~/.emacs-live-packs/user-orgmode-pack"
-                  "~/.emacs-live-packs/user-lisp-pack"
-                  "~/.emacs-live-packs/user-buffer-pack"
-                  "~/.emacs-live-packs/user-git-pack"
-                  "~/.emacs-live-packs/user-mail-pack"
-                  "~/.emacs-live-packs/user-shell-pack"
-                  "~/.emacs-live-packs/user-browser-pack"
-                  "~/.emacs-live-packs/user-chat-pack"
-                  "~/.emacs-live-packs/user-clojure-pack"
-                  "~/.emacs-live-packs/user-nrepl-pack"
-                  "~/.emacs-live-packs/user-clojurescript-pack"
-                  "~/.emacs-live-packs/user-caml-pack"))
+(defun add-packs (path packs)
+  "Adding live packs at startup"
+  (live-add-packs
+   (mapcar
+    (lambda (pack)
+      (concat path pack))
+    packs)))
+
+(add-packs "~/.emacs-live-packs/" '("user-install-packages-pack"
+                                    "user-pack"
+                                    "user-blog-pack"
+                                    "user-haskell-pack"
+                                    "user-orgmode-pack"
+                                    "user-lisp-pack"
+                                    "user-buffer-pack"
+                                    "user-git-pack"
+                                    "user-mail-pack"
+                                    "user-shell-pack"
+                                    "user-browser-pack"
+                                    "user-chat-pack"
+                                    "user-clojure-pack"
+                                    "user-nrepl-pack"
+                                    "user-clojurescript-pack"
+                                    "user-caml-pack"))
