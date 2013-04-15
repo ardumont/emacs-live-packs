@@ -13,3 +13,6 @@
 [submodule "haskell-pack"]
 	path = haskell-pack
 	url = git@github.com:ardumont/haskell-pack.git
+[submodule "orgmode-pack"]
+	path = orgmode-pack
+	url = git@github.com:ardumont/orgmode-pack.git
