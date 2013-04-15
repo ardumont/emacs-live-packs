@@ -1,3 +1,5 @@
+(install-packs '(exec-path-from-shell))
+
 ;; User pack init file
 ;;
 ;; User this file to initiate the pack configuration.
@@ -7,7 +9,7 @@
 ;; (from emacs-live's init.el)
 
 ;; setup the path
-(require 'exec-path-from-shell) ;; if not using the ELPA package
+(require 'exec-path-from-shell)
 (exec-path-from-shell-initialize)
 
 ;; some text/font/color tweaks

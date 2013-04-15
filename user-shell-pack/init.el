@@ -1,6 +1,4 @@
-(install-packs '(;; to tell emacs to use the PATH from the cli
-                 exec-path-from-shell
-                 ;; multi-term
+(install-packs '(;; multi-term
                  multi-term))
 
 ;; With this snippet, another press of C-d will kill the buffer.
