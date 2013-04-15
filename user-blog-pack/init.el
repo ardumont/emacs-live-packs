@@ -2,9 +2,13 @@
                  xml-rpc
                  org2blog))
 
+;; hack - there is some dep that has been broken since punchagan separated org2blog and metaweblog.el (https://github.com/punchagan/metaweblog.el)
+(live-add-pack-lib "metaweblog")
+
 ;; depends on netrc, xml-rpc
-(require 'netrc)
 (require 'org2blog-autoloads)
+(require 'netrc)
+(require 'metaweblog)
 
 ;; load the entry tony-blog in the ~/.netrc, we obtain a hash-map with the needed data
 (setq blog (netrc-machine (netrc-parse "~/.netrc") "tony-blog" t))
