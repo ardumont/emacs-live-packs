@@ -65,7 +65,7 @@ Now start emacs.
 emacs --daemon
 ```
 
-This will trigger the installation of the packs.
+This will trigger the installation of the packs if they are not already installed.
 
 ```sh
 tony@dagobah (0,24,) 15:30:32 ~/repo/perso/emacs-live-packs (master) $ emacs --daemon
@@ -365,8 +365,3 @@ Loading /home/tony/.emacs-live-packs/caml-pack/config/bindings.el (source)...don
 Loading /home/tony/.emacs-live-packs/caml-pack/init.el (source)...done
 Starting Emacs daemon.
 ```
-
-# todo
-
-This is still work in progress.
-The next thing I need to do is to separate those packs into their own git repositories and add them here as git submodules.
