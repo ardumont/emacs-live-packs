@@ -43,3 +43,6 @@
 [submodule "clojurescript-pack"]
 	path = clojurescript-pack
 	url = git@github.com:ardumont/clojurescript-pack.git
+[submodule "caml-pack"]
+	path = caml-pack
+	url = git@github.com:ardumont/caml-pack.git
