@@ -10,3 +10,6 @@
 [submodule "install-packages-pack"]
 	path = install-packages-pack
 	url = git@github.com:ardumont/install-packages-pack.git
+[submodule "haskell-pack"]
+	path = haskell-pack
+	url = git@github.com:ardumont/haskell-pack.git
