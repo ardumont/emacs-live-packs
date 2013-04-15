@@ -19,3 +19,6 @@
 [submodule "lisp-pack"]
 	path = lisp-pack
 	url = git@github.com:ardumont/lisp-pack.git
+[submodule "git-pack"]
+	path = git-pack
+	url = git@github.com:ardumont/git-pack.git
