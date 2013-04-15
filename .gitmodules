@@ -31,3 +31,6 @@
 [submodule "browser-pack"]
 	path = browser-pack
 	url = git@github.com:ardumont/browser-pack.git
+[submodule "chat-pack"]
+	path = chat-pack
+	url = git@github.com:ardumont/chat-pack.git
