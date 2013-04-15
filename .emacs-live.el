@@ -7,7 +7,7 @@
     packs)))
 
 (add-packs "~/.emacs-live-packs/" '("install-packages-pack"
-                                    "pack"
+                                    "scratch-pack"
                                     "blog-pack"
                                     "haskell-pack"
                                     "orgmode-pack"

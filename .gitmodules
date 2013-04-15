@@ -4,3 +4,6 @@
 [submodule "buffer-pack"]
 	path = buffer-pack
 	url = git@github.com:ardumont/buffer-pack.git
+[submodule "scratch-pack"]
+	path = scratch-pack
+	url = git@github.com:ardumont/scratch-pack.git
