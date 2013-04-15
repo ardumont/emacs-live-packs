@@ -1,0 +1,3 @@
+[submodule "blog-pack"]
+	path = blog-pack
+	url = git@github.com:ardumont/blog-pack.git
