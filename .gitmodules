@@ -16,3 +16,6 @@
 [submodule "orgmode-pack"]
 	path = orgmode-pack
 	url = git@github.com:ardumont/orgmode-pack.git
+[submodule "lisp-pack"]
+	path = lisp-pack
+	url = git@github.com:ardumont/lisp-pack.git
