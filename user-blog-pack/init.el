@@ -5,7 +5,6 @@
 ;; depends on netrc, xml-rpc
 (require 'netrc)
 (require 'org2blog-autoloads)
-(require 'metaweblog)
 
 ;; load the entry tony-blog in the ~/.netrc, we obtain a hash-map with the needed data
 (setq blog (netrc-machine (netrc-parse "~/.netrc") "tony-blog" t))
