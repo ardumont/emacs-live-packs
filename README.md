@@ -8,7 +8,7 @@ My emacs-live packs setup to use with the most excellent [[https://github.com/ov
 They still need some love but here they are:
 
 - install-packages-pack  some installation repository setup + function to install list of packages
-- pack                   not yet sorted out stuff
+- scratch-pack           not yet sorted out stuff
 - blog-pack              my blog setup to rapidly post article from org-mode
 - haskell-pack           haskell environment setup
 - orgmode-pack           some org-mode specifities
