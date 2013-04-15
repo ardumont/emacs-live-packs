@@ -28,3 +28,6 @@
 [submodule "shell-pack"]
 	path = shell-pack
 	url = git@github.com:ardumont/shell-pack.git
+[submodule "browser-pack"]
+	path = browser-pack
+	url = git@github.com:ardumont/browser-pack.git
