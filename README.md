@@ -1,7 +1,7 @@
 emacs-live-packs
 ================
 
-My emacs-live packs setup to use with the most excellent [[https://github.com/overtone/emacs-live][emacs-live]].
+My emacs-live packs setup to use with the most excellent [emacs-live](https://github.com/overtone/emacs-live).
 
 # pack list
 
@@ -25,6 +25,10 @@ They still need some love but here they are:
 - caml-pack              some caml setup
 
 # install
+
+## pre-requisite
+
+Install [emacs-live](https://github.com/overtone/emacs-live), you won't regret it!
 
 ## clone
 
