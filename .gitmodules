@@ -22,3 +22,6 @@
 [submodule "git-pack"]
 	path = git-pack
 	url = git@github.com:ardumont/git-pack.git
+[submodule "mail-pack"]
+	path = mail-pack
+	url = git@github.com:ardumont/mail-pack.git
