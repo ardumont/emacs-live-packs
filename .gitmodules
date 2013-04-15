@@ -7,3 +7,6 @@
 [submodule "scratch-pack"]
 	path = scratch-pack
 	url = git@github.com:ardumont/scratch-pack.git
+[submodule "install-packages-pack"]
+	path = install-packages-pack
+	url = git@github.com:ardumont/install-packages-pack.git
