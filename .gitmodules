@@ -46,3 +46,6 @@
 [submodule "install-packages-pack"]
 	path = install-packages-pack
 	url = git@github.com:ardumont/install-packages-pack.git
+[submodule "modeline-pack"]
+	path = modeline-pack
+	url = git@github.com:ardumont/modeline-pack.git

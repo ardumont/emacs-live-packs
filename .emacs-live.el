@@ -21,4 +21,5 @@
                                     "clojure-pack"
                                     "nrepl-pack"
                                     "clojurescript-pack"
-                                    "caml-pack"))
+                                    "caml-pack"
+                                    "modeline-pack"))
