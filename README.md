@@ -23,6 +23,7 @@ They still need some love but here they are:
 - [nrepl-pack](https://github.com/ardumont/nrepl-pack)                        nrepl override setup
 - [clojurescript-pack](https://github.com/ardumont/clojurescript-pack)        clojurescript setup
 - [caml-pack](https://github.com/ardumont/caml-pack)                          some caml setup
+- [twitter-pack](https://github.com/ardumont/twitter-pack)                    twitter setup
 
 # install
 
