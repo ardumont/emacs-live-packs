@@ -7,22 +7,22 @@ My emacs-live packs setup to use with the most excellent [emacs-live](https://gi
 
 They still need some love but here they are:
 
-- install-packages-pack  some installation repository setup + function to install list of packages
-- scratch-pack           not yet sorted out stuff
-- blog-pack              my blog setup to rapidly post article from org-mode
-- haskell-pack           haskell environment setup
-- orgmode-pack           some org-mode specifities
-- lisp-pack              list environment setup
-- buffer-pack            some buffer manipulation functions
-- git-pack               git specific setup
-- mail-pack              email setup
-- shell-pack             shell setup
-- browser-pack           browser specific tryouts
-- chat-pack              irc setup
-- clojure-pack           clojure override from emacs-live's defaults + other stuff
-- nrepl-pack             nrepl override setup
-- clojurescript-pack     clojurescript setup
-- caml-pack              some caml setup
+- [install-packages-pack](https://github.com/ardumont/install-packages-pack)  some installation repository setup + function to install list of packages
+- [scratch-pack](https://github.com/ardumont/scratch-pack)                    not yet sorted out stuff
+- [blog-pack](https://github.com/ardumont/blog-pack)                          my blog setup to rapidly post article from org-mode
+- [haskell-pack](https://github.com/ardumont/haskell-pack)                    haskell environment setup
+- [orgmode-pack](https://github.com/ardumont/orgmode-pack)                    some org-mode specifities
+- [lisp-pack](https://github.com/ardumont/lisp-pack)                          list environment setup
+- [buffer-pack](https://github.com/ardumont/buffer-pack)                      some buffer manipulation functions
+- [git-pack](https://github.com/ardumont/git-pack)                            git specific setup
+- [mail-pack](https://github.com/ardumont/mail-pack)                          email setup
+- [shell-pack](https://github.com/ardumont/shell-pack)                        shell setup
+- [browser-pack](https://github.com/ardumont/browser-pack)                    browser specific tryouts
+- [chat-pack](https://github.com/ardumont/chat-pack)                          irc setup
+- [clojure-pack](https://github.com/ardumont/clojure-pack)                    clojure override from emacs-live's defaults + other stuff
+- [nrepl-pack](https://github.com/ardumont/nrepl-pack)                        nrepl override setup
+- [clojurescript-pack](https://github.com/ardumont/clojurescript-pack)        clojurescript setup
+- [caml-pack](https://github.com/ardumont/caml-pack)                          some caml setup
 
 # install
 
