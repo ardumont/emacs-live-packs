@@ -49,3 +49,6 @@
 [submodule "modeline-pack"]
 	path = modeline-pack
 	url = git@github.com:ardumont/modeline-pack.git
+[submodule "twitter-pack"]
+	path = twitter-pack
+	url = git@github.com:ardumont/twitter-pack.git

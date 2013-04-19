@@ -22,4 +22,5 @@
                                     "nrepl-pack"
                                     "clojurescript-pack"
                                     "caml-pack"
-                                    "modeline-pack"))
+                                    "modeline-pack"
+                                    "twitter-pack"))
