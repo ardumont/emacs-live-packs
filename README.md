@@ -40,7 +40,7 @@ If you want to use one of those packs, you need to also install one by default, 
 
 This one is in charge of setuping different repositories (marmalade, milkbox, elpa, etc...).
 Also, it installs a utility function `install-packs` to download packages from those repositories.
-This utility function is used throughout all the previous packs referenced.
+This utility function is used throughout all the [referenced packs](#pack-list).
 
 ## clone
 
