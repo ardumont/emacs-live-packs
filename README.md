@@ -29,7 +29,16 @@ They still need some love but here they are:
 
 ## pre-requisite
 
+### emacs-live
+
 Install [emacs-live](https://github.com/overtone/emacs-live), you won't regret it!
+
+### packs
+
+If you want to use one of those packs, you need to install one by default, `install-packages-pack`.
+
+This one is in charge of setup different repositories (marmalade, milkbox, etc...).
+Also, it installs a utility function `install-packs` to download packages from those repositories.
 
 ## clone
 
@@ -66,7 +75,7 @@ Now start emacs.
 emacs --daemon
 ```
 
-This will trigger the installation of the packs if they are not already installed.
+This will install emacs packages needed if they are not already installed.
 
 ```sh
 tony@dagobah (0,24,) 15:30:32 ~/repo/perso/emacs-live-packs (master) $ emacs --daemon
