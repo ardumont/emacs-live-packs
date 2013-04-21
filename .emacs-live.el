@@ -47,4 +47,6 @@
                                          ;; some puppet related pack
                                          "puppet-pack"
                                          ;; chrome editing textarea using emacs
-                                         "chrome-pack"))
+                                         "chrome-pack"
+                                         ;; deal with macro
+                                         "macro-pack"))

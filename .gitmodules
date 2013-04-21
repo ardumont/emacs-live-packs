@@ -58,3 +58,6 @@
 [submodule "chrome-pack"]
 	path = chrome-pack
 	url = git@github.com:ardumont/chrome-pack.git
+[submodule "macro-pack"]
+	path = macro-pack
+	url = git@github.com:ardumont/macro-pack.git

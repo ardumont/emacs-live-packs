@@ -26,6 +26,7 @@ They still need some love but here they are:
 - [twitter-pack](https://github.com/ardumont/twitter-pack)                    twitter setup
 - [puppet-pack](https://github.com/ardumont/puppet-pack)                      puppet setup
 - [chrome-pack](https://github.com/ardumont/chrome-pack)                      chrome setup
+- [macro-pack](https://github.com/ardumont/macro-pack)                        macro setup
 
 # install
 
