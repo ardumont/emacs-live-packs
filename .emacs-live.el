@@ -1,4 +1,5 @@
-(defun add-packs (path packs)
+;; a utility function to help in installing emacs-live packs
+(defun add-live-packs (path packs)
   "Adding live packs at startup"
   (live-add-packs
    (mapcar
@@ -6,43 +7,40 @@
       (concat path pack))
     packs)))
 
-;; install setup regarding emacs repositories (elpa, marmalade, milkbox)
-(add-packs "~/.emacs-live-packs/" '("install-packages-pack"))
-
-;; A list of packages to ensure are installed at launch.
-(install-packs '(switch-window
-                      ;; compile on the fly
-                      flymake
-                      flymake-shell
-                      ;; some playtime with graphviz
-                      graphviz-dot-mode
-                      fold-dwim
-                      htmlize
-                      ;; to help in editing textare in chrome
-                      edit-server
-                      ;; to display puppet file
-                      puppet-mode
-                      ;; ghci-completion
-                      ;; to make some awesome stuff on multiple line in one time
-                      multiple-cursors
-                      ;; move
-                      move-text))
-
 ;; all the other packs needed
-(add-packs "~/.emacs-live-packs" '("scratch-pack"
-                                    "blog-pack"
-                                    "haskell-pack"
-                                    "orgmode-pack"
-                                    "lisp-pack"
-                                    "buffer-pack"
-                                    "git-pack"
-                                    "mail-pack"
-                                    "shell-pack"
-                                    "browser-pack"
-                                    "chat-pack"
-                                    "clojure-pack"
-                                    "nrepl-pack"
-                                    "clojurescript-pack"
-                                    "caml-pack"
-                                    "modeline-pack"
-                                    "twitter-pack"))
+(add-live-packs "~/.emacs-live-packs/" '( ;; installing emacs repositories (melpa, milkbox, marmalade) and the install-packs utility function
+                                         "install-packages-pack"
+                                         ;; a pack to mess around until drying stuff
+                                         "scratch-pack"
+                                         ;; a setup blog pack for wordpress
+                                         "blog-pack"
+                                         ;; haskell dev env
+                                         "haskell-pack"
+                                         ;; setup org-mode
+                                         "orgmode-pack"
+                                         ;; lisp dev env
+                                         "lisp-pack"
+                                         ;; buffer manipulation
+                                         "buffer-pack"
+                                         ;; setup regarding git
+                                         "git-pack"
+                                         ;; setup mail credentials
+                                         "mail-pack"
+                                         ;; shell manipulation
+                                         "shell-pack"
+                                         ;; browser manipulation
+                                         "browser-pack"
+                                         ;; irc credential setup
+                                         "chat-pack"
+                                         ;; clojure override bindings from emacs-live
+                                         "clojure-pack"
+                                         ;; nrepl override bindings from nrepl
+                                         "nrepl-pack"
+                                         ;; clojurescript setup
+                                         "clojurescript-pack"
+                                         ;; caml dev env
+                                         "caml-pack"
+                                         ;; adding stuff regarding emacs modeline
+                                         "modeline-pack"
+                                         ;; twitter credentials setup
+                                         "twitter-pack"))
