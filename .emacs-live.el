@@ -43,4 +43,6 @@
                                          ;; adding stuff regarding emacs modeline
                                          "modeline-pack"
                                          ;; twitter credentials setup
-                                         "twitter-pack"))
+                                         "twitter-pack"
+                                         ;; some puppet related pack
+                                         "puppet-pack"))

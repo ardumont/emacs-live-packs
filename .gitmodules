@@ -52,3 +52,6 @@
 [submodule "twitter-pack"]
 	path = twitter-pack
 	url = git@github.com:ardumont/twitter-pack.git
+[submodule "puppet-pack"]
+	path = puppet-pack
+	url = git@github.com:ardumont/puppet-pack.git

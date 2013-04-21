@@ -24,6 +24,7 @@ They still need some love but here they are:
 - [clojurescript-pack](https://github.com/ardumont/clojurescript-pack)        clojurescript setup
 - [caml-pack](https://github.com/ardumont/caml-pack)                          some caml setup
 - [twitter-pack](https://github.com/ardumont/twitter-pack)                    twitter setup
+- [puppet-pack](https://github.com/ardumont/puppet-pack)                      puppet setup
 
 # install
 
