@@ -25,6 +25,7 @@ They still need some love but here they are:
 - [caml-pack](https://github.com/ardumont/caml-pack)                          some caml setup
 - [twitter-pack](https://github.com/ardumont/twitter-pack)                    twitter setup
 - [puppet-pack](https://github.com/ardumont/puppet-pack)                      puppet setup
+- [chrome-pack](https://github.com/ardumont/chrome-pack)                      chrome setup
 
 # install
 
