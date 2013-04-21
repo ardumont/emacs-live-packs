@@ -10,6 +10,8 @@
 ;; all the other packs needed
 (add-live-packs "~/.emacs-live-packs/" '( ;; installing emacs repositories (melpa, milkbox, marmalade) and the install-packs utility function
                                          "install-packages-pack"
+                                         ;; buffer manipulation
+                                         "buffer-pack"
                                          ;; a pack to mess around until drying stuff
                                          "scratch-pack"
                                          ;; a setup blog pack for wordpress
@@ -20,8 +22,6 @@
                                          "orgmode-pack"
                                          ;; lisp dev env
                                          "lisp-pack"
-                                         ;; buffer manipulation
-                                         "buffer-pack"
                                          ;; setup regarding git
                                          "git-pack"
                                          ;; setup mail credentials
