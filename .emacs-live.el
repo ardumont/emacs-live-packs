@@ -9,8 +9,8 @@
 ;; install setup regarding emacs repositories (elpa, marmalade, milkbox)
 (add-packs "~/.emacs-live-packs/" '("install-packages-pack"))
 
-;; HACK - will be moved elsewhere later
-(defvar my-packages '(switch-window
+;; A list of packages to ensure are installed at launch.
+(install-packs '(switch-window
                       ;; compile on the fly
                       flymake
                       flymake-shell
@@ -26,10 +26,7 @@
                       ;; to make some awesome stuff on multiple line in one time
                       multiple-cursors
                       ;; move
-                      move-text)
-  "A list of packages to ensure are installed at launch.")
-
-(install-packs my-packages)
+                      move-text))
 
 ;; all the other packs needed
 (add-packs "~/.emacs-live-packs" '("scratch-pack"
