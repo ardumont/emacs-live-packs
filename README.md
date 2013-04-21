@@ -35,10 +35,11 @@ Install [emacs-live](https://github.com/overtone/emacs-live), you won't regret i
 
 ### packs
 
-If you want to use one of those packs, you need to install one by default, `install-packages-pack`.
+If you want to use one of those packs, you need to also install one by default, [install-packages-pack](https://github.com/ardumont/install-packages-pack).
 
-This one is in charge of setup different repositories (marmalade, milkbox, etc...).
+This one is in charge of setuping different repositories (marmalade, milkbox, elpa, etc...).
 Also, it installs a utility function `install-packs` to download packages from those repositories.
+This utility function is used throughout all the previous packs referenced.
 
 ## clone
 
