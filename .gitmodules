@@ -55,3 +55,6 @@
 [submodule "puppet-pack"]
 	path = puppet-pack
 	url = git@github.com:ardumont/puppet-pack.git
+[submodule "chrome-pack"]
+	path = chrome-pack
+	url = git@github.com:ardumont/chrome-pack.git

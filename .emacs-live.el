@@ -45,4 +45,6 @@
                                          ;; twitter credentials setup
                                          "twitter-pack"
                                          ;; some puppet related pack
-                                         "puppet-pack"))
+                                         "puppet-pack"
+                                         ;; chrome editing textarea using emacs
+                                         "chrome-pack"))
