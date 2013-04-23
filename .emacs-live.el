@@ -8,8 +8,10 @@
     packs)))
 
 ;; all the other packs needed
-(add-live-packs "~/.emacs-live-packs/" '( ;; installing emacs repositories (melpa, milkbox, marmalade) and the install-packs utility function
+(add-live-packs "~/.emacs-live-packs/" '(;; installing emacs repositories (melpa, milkbox, marmalade) and the install-packs utility function
                                          "install-packages-pack"
+                                         ;; installing el-get
+                                         "el-get-pack"
                                          ;; buffer manipulation
                                          "buffer-pack"
                                          ;; a pack to mess around until drying stuff

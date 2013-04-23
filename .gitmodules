@@ -61,3 +61,6 @@
 [submodule "macro-pack"]
 	path = macro-pack
 	url = git@github.com:ardumont/macro-pack.git
+[submodule "el-get-pack"]
+	path = el-get-pack
+	url = git@github.com:ardumont/el-get-pack.git
