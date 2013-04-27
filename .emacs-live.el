@@ -51,4 +51,6 @@
                                          ;; chrome editing textarea using emacs
                                          "chrome-pack"
                                          ;; deal with macro
-                                         "macro-pack"))
+                                         "macro-pack"
+                                         ;; ruby
+                                         "ruby-pack"))
