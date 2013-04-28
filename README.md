@@ -28,6 +28,11 @@ Some pack still need some lovin' but most are ready:
 - [chrome-pack](https://github.com/ardumont/chrome-pack)                      chrome setup
 - [macro-pack](https://github.com/ardumont/macro-pack)                        macro setup
 
+*Note*
+This pack is an orchestrator.
+You still need to setup those packs independently for the overall to be fully functional.
+Report yourself to each pack's README.md file to know what are those steps.
+
 # install
 
 ## pre-requisite
