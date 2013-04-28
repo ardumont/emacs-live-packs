@@ -5,14 +5,14 @@ My emacs-live packs setup to use with the most excellent [emacs-live](https://gi
 
 # pack list
 
-They still need some love but here they are:
+Some pack still need some lovin' but most are ready:
 
 - [install-packages-pack](https://github.com/ardumont/install-packages-pack)  some installation repository setup + function to install list of packages
 - [scratch-pack](https://github.com/ardumont/scratch-pack)                    not yet sorted out stuff
-- [blog-pack](https://github.com/ardumont/blog-pack)                          my blog setup to rapidly post article from org-mode
+- [blog-pack](https://github.com/ardumont/blog-pack)                          blog setup to rapidly post article from org-mode to wordpress
 - [haskell-pack](https://github.com/ardumont/haskell-pack)                    haskell environment setup
-- [orgmode-pack](https://github.com/ardumont/orgmode-pack)                    some org-mode specifities
-- [lisp-pack](https://github.com/ardumont/lisp-pack)                          list environment setup
+- [orgmode-pack](https://github.com/ardumont/orgmode-pack)                    some org-mode specificities
+- [lisp-pack](https://github.com/ardumont/lisp-pack)                          lisp environment setup
 - [buffer-pack](https://github.com/ardumont/buffer-pack)                      some buffer manipulation functions
 - [git-pack](https://github.com/ardumont/git-pack)                            git specific setup
 - [mail-pack](https://github.com/ardumont/mail-pack)                          email setup
