@@ -38,11 +38,29 @@ Install [emacs-live](https://github.com/overtone/emacs-live), you won't regret i
 
 ### packs
 
+#### default pack needed
+
 If you want to use one of those packs, you need to also install one by default, [install-packages-pack](https://github.com/ardumont/install-packages-pack).
 
 This one is in charge of setuping different repositories (marmalade, milkbox, elpa, etc...).
 Also, it installs a utility function `install-packs` to download packages from those repositories.
 This utility function is used throughout all the [referenced packs](#pack-list).
+
+#### Adding/Removing packs
+
+To add or remove packs, simply edit the `.emacs-live.el` by adding or removing packs from the following list:
+
+For example, to simply install orgmode-pack and the blog-pack, here it is:
+```elisp
+;; all the other packs needed
+(add-live-packs "~/.emacs-live-packs/" '(;; installing emacs repositories (melpa, milkbox, marmalade) and the install-packs utility function
+                                         "install-packages-pack"
+                                         ;; setup org-mode
+                                         "orgmode-pack"
+                                         ;; a setup blog pack for wordpress
+                                         "blog-pack"))
+
+```
 
 ## clone
 
