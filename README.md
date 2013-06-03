@@ -41,6 +41,12 @@ Report yourself to each pack's README.md file to know what are those steps.
 
 Install [emacs-live](https://github.com/overtone/emacs-live), you won't regret it!
 
+Long story short:
+
+```sh
+git clone git://github.com/overtone/emacs-live.git ~/.emacs.d
+```
+
 ## clone
 
 Clone the repository.
