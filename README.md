@@ -27,6 +27,7 @@ Some pack still need some lovin' but most are ready:
 - [puppet-pack](https://github.com/ardumont/puppet-pack)                      puppet setup
 - [chrome-pack](https://github.com/ardumont/chrome-pack)                      chrome setup
 - [macro-pack](https://github.com/ardumont/macro-pack)                        macro setup
+- [scala-pack](https://github.com/ardumont/scala-pack)                        scala pack
 
 *Note*
 This pack is an orchestrator.
