@@ -67,3 +67,6 @@
 [submodule "ruby-pack"]
 	path = ruby-pack
 	url = git@github.com:cap10morgan/ruby-pack.git
+[submodule "scala-pack"]
+	path = scala-pack
+	url = git@github.com:ardumont/scala-pack.git

@@ -54,4 +54,5 @@
                                          "macro-pack"
                                          ;; ruby
                                          ;;"ruby-pack"
+                                         "scala-pack"
 ))
