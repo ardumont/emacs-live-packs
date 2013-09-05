@@ -41,4 +41,5 @@
                   "chrome-pack"
                   "macro-pack"
                   "scala-pack"
-                  "elisp-pack"))
+                  "elisp-pack"
+                  "groovy-pack"))
