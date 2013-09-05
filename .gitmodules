@@ -73,3 +73,6 @@
 [submodule "elisp-pack"]
 	path = elisp-pack
 	url = git@github.com:ardumont/elisp-pack.git
+[submodule "groovy-pack"]
+	path = groovy-pack
+	url = git@github.com:ardumont/groovy-pack.git
