@@ -76,3 +76,6 @@
 [submodule "groovy-pack"]
 	path = groovy-pack
 	url = git@github.com:ardumont/groovy-pack.git
+[submodule "php-pack"]
+	path = php-pack
+	url = git@github.com:ardumont/php-pack.git
