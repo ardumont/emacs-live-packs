@@ -79,3 +79,6 @@
 [submodule "php-pack"]
 	path = php-pack
 	url = git@github.com:ardumont/php-pack.git
+[submodule "ctags-pack"]
+	path = ctags-pack
+	url = git@github.com:ardumont/ctags-pack.git
