@@ -43,4 +43,5 @@
                   "scala-pack"
                   "elisp-pack"
 ;;                  "groovy-pack"
-                  "php-pack"))
+                  "php-pack"
+                  "ctags-pack"))
