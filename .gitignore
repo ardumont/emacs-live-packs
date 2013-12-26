@@ -1,1 +1,2 @@
 *.elc
+/dump-macro.el
