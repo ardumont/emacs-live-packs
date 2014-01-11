@@ -82,3 +82,6 @@
 [submodule "ctags-pack"]
 	path = ctags-pack
 	url = git@github.com:ardumont/ctags-pack.git
+[submodule "prelude-pack"]
+	path = prelude-pack
+	url = git@github.com:ardumont/prelude-pack.git
