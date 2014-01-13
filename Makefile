@@ -1,3 +1,6 @@
-update:
-	git pull --rebase origin master
+pull:
+	git pull --rebase --prune origin master
 	git submodule update --init
+
+push:
+	git push origin master
