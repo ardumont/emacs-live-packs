@@ -1,5 +1,5 @@
 pull:
-	git pull --rebase --prune origin master
+	git pull --rebase --prune --recurse-submodules origin master
 	git submodule update --init
 
 push:
