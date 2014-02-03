@@ -5,7 +5,7 @@ My emacs-live packs setup to use with the most excellent [emacs-live](https://gi
 
 # pack list
 
-Some pack still need some lovin' but most are ready:
+Some packs still need some lovin' but most are ready:
 
 - [install-packages-pack](https://github.com/ardumont/install-packages-pack)  some installation repository setup + function to install list of packages
 - [scratch-pack](https://github.com/ardumont/scratch-pack)                    not yet sorted out stuff
@@ -114,7 +114,8 @@ emacs --daemon
 This will install emacs packages needed if they are not already installed.
 
 ```sh
-tony@dagobah (0,24,) 15:30:32 ~/repo/perso/emacs-live-packs (master) $ emacs --daemon
+# tony at dagobah in ~/repo/perso/emacs-live-packs on git:master x [20:30:00]
+$ emacs --daemon
 
 Warning: due to a long standing Gtk+ bug
 http://bugzilla.gnome.org/show_bug.cgi?id=85715
@@ -131,283 +132,594 @@ Loading debian-ispell...done
 Loading /var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...
 Loading /var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...done
 Loading /etc/emacs/site-start.d/50dictionaries-common.el (source)...done
+Loading /etc/emacs/site-start.d/50windows-el.el (source)...
+Loading /etc/emacs/site-start.d/50windows-el.el (source)...done
 Loading /home/tony/.emacs.d/manifest.el (source)...
 Loading /home/tony/.emacs.d/manifest.el (source)...done
 Loading /home/tony/.emacs.d/lib/live-core.el (source)...
 Loading /home/tony/.emacs.d/lib/live-core.el (source)...done
 Loading /home/tony/.emacs-live.el (source)...
 Loading /home/tony/.emacs-live.el (source)...done
-Live pack lib dir: ~/.emacs.d/packs/live/foundation-pack/lib/
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/info.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/info.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/init.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/auto-compile-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/auto-compile-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/backup-dir-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/backup-dir-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/util-fns.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/util-fns.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/built-in.el (source)...
+
+
+==> Loading Emacs Live Pack: /home/tony/.emacs.d/packs/stable/foundation-pack/
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/info.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/info.el (source)...done
+==> Pack name: emacs-live-foundation-pack
+==> Pack Version: 1.0beta24
+==> Pack Description: The foundation stone on top of which all packs are built. Sets the visual theme
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/init.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/auto-compile-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/auto-compile-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/backup-dir-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/backup-dir-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/util-fns.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/util-fns.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/built-in.el (source)...
 Loading /home/tony/.emacs.d/tmp/recentf...
 Loading /home/tony/.emacs.d/tmp/recentf...done
 Cleaning up the recentf list...
 Cleaning up the recentf list...done (0 removed)
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/built-in.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/cosmetic.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/cosmetic.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/ido-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/ido-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/smex-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/smex-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/tramp-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/tramp-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/mouse-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/mouse-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/ibuffer-git-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/ibuffer-git-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/key-chord-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/built-in.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/cosmetic.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/cosmetic.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/ido-conf.el (source)...
+~/.emacs.d/packs/stable/foundation-pack/lib/flx/flx-ido.el:Warning: reference
+    to free variable `flx-ido-mode'
+~/.emacs.d/packs/stable/foundation-pack/lib/flx/flx-ido.el:Warning: reference
+    to free variable `flx-ido-mode'
+~/.emacs.d/packs/stable/foundation-pack/lib/flx/flx-ido.el:Warning: reference
+    to free variable `flx-ido-mode'
+~/.emacs.d/packs/stable/foundation-pack/lib/flx/flx-ido.el:Warning: reference
+    to free variable `flx-ido-mode'
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/ido-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/smex-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/smex-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/tramp-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/tramp-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/mouse-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/mouse-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/ibuffer-git-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/ibuffer-git-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/key-chord-conf.el (source)...
 Key Chord mode on
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/key-chord-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/window-number-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/window-number-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/recentf-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/recentf-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/elisp-slime-nav-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/elisp-slime-nav-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/popwin-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/popwin-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/shell-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/shell-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/spelling-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/spelling-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/lisp-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/lisp-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/win-switch-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/win-switch-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/zone-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/zone-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/monkey-patch.el (source)...
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/config/monkey-patch.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/foundation-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs.d/packs/live/colour-pack/lib/
-Loading /home/tony/.emacs.d/packs/live/colour-pack/info.el (source)...
-Loading /home/tony/.emacs.d/packs/live/colour-pack/info.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/colour-pack/init.el (source)...
-Loading /home/tony/.emacs.d/packs/live/colour-pack/config/colour-theme-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/colour-pack/lib/cyberpunk.el (source)...
-Loading /home/tony/.emacs.d/packs/live/colour-pack/lib/cyberpunk.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/colour-pack/lib/gandalf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/colour-pack/lib/gandalf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/colour-pack/config/colour-theme-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/colour-pack/config/live-fontify-hex-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/colour-pack/config/live-fontify-hex-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/colour-pack/config/live-fontify-hex-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/colour-pack/config/live-fontify-hex-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/colour-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs.d/packs/live/clojure-pack/lib/
-Loading /home/tony/.emacs.d/packs/live/clojure-pack/info.el (source)...
-Loading /home/tony/.emacs.d/packs/live/clojure-pack/info.el (source)...done
-Recompiling /home/tony/.emacs.d/packs/live/clojure-pack/init.el...
-init.el:6:1:Error: Cannot open load file: uuid
-Recompiling /home/tony/.emacs.d/packs/live/clojure-pack/init.el...done
-Loading /home/tony/.emacs.d/packs/live/clojure-pack/init.el (source)...
-Loading /home/tony/.emacs.d/packs/live/clojure-pack/config/paredit-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/clojure-pack/config/paredit-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/clojure-pack/config/mic-paren-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/clojure-pack/config/mic-paren-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/clojure-pack/config/highlight-flash-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/clojure-pack/config/highlight-flash-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/clojure-pack/config/clojure-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/clojure-pack/config/clojure-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/clojure-pack/config/auto-complete-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/clojure-pack/config/auto-complete-conf.el (source)...done
-Recompiling /home/tony/.emacs.d/packs/live/clojure-pack/config/nrepl-conf.el...
-nrepl-conf.el:2:1:Error: Cannot open load file: nrepl
-Recompiling /home/tony/.emacs.d/packs/live/clojure-pack/config/nrepl-conf.el...done
-Loading /home/tony/.emacs.d/packs/live/clojure-pack/config/nrepl-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/clojure-pack/config/nrepl-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/clojure-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs.d/packs/live/lang-pack/lib/
-Loading /home/tony/.emacs.d/packs/live/lang-pack/info.el (source)...
-Loading /home/tony/.emacs.d/packs/live/lang-pack/info.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/lang-pack/init.el (source)...
-Loading /home/tony/.emacs.d/packs/live/lang-pack/config/yaml-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/lang-pack/config/yaml-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/lang-pack/config/ioke-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/lang-pack/config/ioke-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/lang-pack/config/auto-modes.el (source)...
-Loading /home/tony/.emacs.d/packs/live/lang-pack/config/auto-modes.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/lang-pack/config/ruby-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/lang-pack/config/ruby-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/lang-pack/config/markdown-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/lang-pack/config/markdown-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/lang-pack/config/supercollider-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/lang-pack/config/supercollider-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/lang-pack/config/actionscript-conf.el (source)...
-Loading actionscript-config...
-Loading actionscript-config...done
-Loading /home/tony/.emacs.d/packs/live/lang-pack/config/actionscript-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/lang-pack/config/js2-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/lang-pack/config/js2-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/lang-pack/config/glsl-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/lang-pack/config/glsl-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/lang-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs.d/packs/live/power-pack/lib/
-Loading /home/tony/.emacs.d/packs/live/power-pack/info.el (source)...
-Loading /home/tony/.emacs.d/packs/live/power-pack/info.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/power-pack/init.el (source)...
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/volatile-highlights-conf.el (source)...
-Warning: ad-Orig-kill-region called with 3 arguments, but accepts only 2
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/volatile-highlights-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/yasnippet-conf.el (source)...
-[yas] Discovered there was already  *Compiler Input* in emacs-lisp-mode
-[yas] Loading compiled snippets from /home/tony/.emacs.d/etc/snippets/emacs-lisp-mode
-[yas] Prepared just-in-time loading for ~/.emacs.d/etc/snippets
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/key-chord-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/window-number-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/window-number-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/recentf-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/recentf-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/elisp-slime-nav-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/elisp-slime-nav-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/popwin-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/popwin-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/shell-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/shell-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/spelling-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/spelling-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/lisp-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/lisp-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/win-switch-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/win-switch-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/zone-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/zone-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/monkey-patch.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/monkey-patch.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/live.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/live.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/foundation-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: /home/tony/.emacs.d/packs/stable/colour-pack/
+Loading /home/tony/.emacs.d/packs/stable/colour-pack/info.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/colour-pack/info.el (source)...done
+==> Pack name: emacs-live-colour-pack
+==> Pack Version: 1.0beta24
+==> Pack Description: A default pair of colour themes: Cyberpunk for those that like an intense experience with a black background, or Gandalf for those that like to program into the sun.
+Loading /home/tony/.emacs.d/packs/stable/colour-pack/init.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/colour-pack/config/colour-theme-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/colour-pack/lib/cyberpunk.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/colour-pack/lib/cyberpunk.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/colour-pack/lib/gandalf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/colour-pack/lib/gandalf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/colour-pack/config/colour-theme-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/colour-pack/config/live-fontify-hex-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/colour-pack/config/live-fontify-hex-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/colour-pack/config/live-fontify-hex-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/colour-pack/config/live-fontify-hex-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/colour-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: /home/tony/.emacs.d/packs/stable/lang-pack/
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/info.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/info.el (source)...done
+==> Pack name: emacs-live-lang-pack
+==> Pack Version: 1.0beta24
+==> Pack Description: A pack containing language modes for a number of interesting languages
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/init.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/yaml-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/yaml-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/ioke-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/ioke-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/auto-modes.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/auto-modes.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/ruby-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/ruby-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/markdown-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/markdown-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/supercollider-conf.el (source)...
+`flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
+`flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
+`flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
+`flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
+`flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/supercollider-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/actionscript-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/lib/actionscript-mode/actionscript-config.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/lib/actionscript-mode/actionscript-config.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/actionscript-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/js2-conf.el (source)...
+`labels' is an obsolete macro (as of 24.3); use `cl-labels' instead.
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/js2-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/glsl-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/glsl-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: /home/tony/.emacs.d/packs/stable/power-pack/
+Loading /home/tony/.emacs.d/packs/stable/power-pack/info.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/power-pack/info.el (source)...done
+==> Pack name: emacs-live-power-pack
+==> Pack Version: 1.0beta24
+==> Pack Description: Power up Emacs with a bunch of awesome tools
+Loading /home/tony/.emacs.d/packs/stable/power-pack/init.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/volatile-highlights-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/volatile-highlights-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/yasnippet-conf.el (source)...
+[yas] Prepared just-in-time loading for /home/tony/.emacs.d/etc/snippets
 [yas] Reloaded everything (snippets will load just-in-time)....
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/yasnippet-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/undo-tree-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/undo-tree-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/refheap-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/refheap-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/scratch-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/scratch-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/highlight-tail-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/highlight-tail-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/gist-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/gist-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/browse-kill-ring-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/browse-kill-ring-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/expand-region-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/expand-region-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/ace-jump-mode-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/ace-jump-mode-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/multiple-cursors-conf.el (source)...
-Warning: reference to free variable `multiple-cursors-mode'
-Warning: reference to free variable `mc--read-char'
-Warning: assignment to free variable `mc--read-char'
-Warning: reference to free variable `multiple-cursors-mode'
-Warning: reference to free variable `mc--read-quoted-char'
-Warning: assignment to free variable `mc--read-quoted-char'
-Warning: reference to free variable `rectangular-region-mode'
-Warning: reference to free variable `rectangular-region-mode'
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/multiple-cursors-conf.el (source)...done
-Recompiling /home/tony/.emacs.d/packs/live/power-pack/config/git-gutter-conf.el...
-[yas] Loading for `text-mode', just-in-time: (yas--load-directory-1 /home/tony/.emacs.d/etc/snippets/text-mode (quote text-mode) (quote nil))!
-[yas] Loading compiled snippets from /home/tony/.emacs.d/etc/snippets/text-mode
-git-gutter-conf.el:2:1:Error: Cannot open load file: git-gutter
-Recompiling /home/tony/.emacs.d/packs/live/power-pack/config/git-gutter-conf.el...done
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/git-gutter-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/power-pack/config/git-gutter-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/power-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs.d/packs/live/git-pack/lib/
-Loading /home/tony/.emacs.d/packs/live/git-pack/info.el (source)...
-Loading /home/tony/.emacs.d/packs/live/git-pack/info.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/git-pack/init.el (source)...
-Loading /home/tony/.emacs.d/packs/live/git-pack/config/magit-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/live/git-pack/config/magit-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/git-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs.d/packs/live/bindings-pack/lib/
-Loading /home/tony/.emacs.d/packs/live/bindings-pack/info.el (source)...
-Loading /home/tony/.emacs.d/packs/live/bindings-pack/info.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/bindings-pack/init.el (source)...
-Loading /home/tony/.emacs.d/packs/live/bindings-pack/config/default-bindings.el (source)...
-Loading /home/tony/.emacs.d/packs/live/bindings-pack/config/default-bindings.el (source)...done
-Loading /home/tony/.emacs.d/packs/live/bindings-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs-live-packs/install-packages-pack/lib/
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/yasnippet-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/undo-tree-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/undo-tree-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/refheap-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/refheap-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/scratch-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/scratch-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/highlight-tail-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/highlight-tail-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/gist-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/gist-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/browse-kill-ring-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/browse-kill-ring-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/expand-region-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/expand-region-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/ace-jump-mode-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/ace-jump-mode-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/multiple-cursors-conf.el (source)...
+~/.emacs.d/packs/stable/power-pack/lib/multiple-cursors/multiple-cursors-core.el:Warning:
+    reference to free variable `multiple-cursors-mode'
+~/.emacs.d/packs/stable/power-pack/lib/multiple-cursors/multiple-cursors-core.el:Warning:
+    reference to free variable `mc--read-char'
+~/.emacs.d/packs/stable/power-pack/lib/multiple-cursors/multiple-cursors-core.el:Warning:
+    assignment to free variable `mc--read-char'
+~/.emacs.d/packs/stable/power-pack/lib/multiple-cursors/multiple-cursors-core.el:Warning:
+    reference to free variable `multiple-cursors-mode'
+~/.emacs.d/packs/stable/power-pack/lib/multiple-cursors/multiple-cursors-core.el:Warning:
+    reference to free variable `mc--read-quoted-char'
+~/.emacs.d/packs/stable/power-pack/lib/multiple-cursors/multiple-cursors-core.el:Warning:
+    assignment to free variable `mc--read-quoted-char'
+Loading /home/tony/.emacs.d/.mc-lists.el (source)...
+Loading /home/tony/.emacs.d/.mc-lists.el (source)...done
+~/.emacs.d/packs/stable/power-pack/lib/multiple-cursors/rectangular-region-mode.el:Warning:
+    reference to free variable `rectangular-region-mode'
+~/.emacs.d/packs/stable/power-pack/lib/multiple-cursors/rectangular-region-mode.el:Warning:
+    reference to free variable `rectangular-region-mode'
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/multiple-cursors-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/git-gutter-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/git-gutter-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/power-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: /home/tony/.emacs.d/packs/stable/git-pack/
+Loading /home/tony/.emacs.d/packs/stable/git-pack/info.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/git-pack/info.el (source)...done
+==> Pack name: emacs-live-git-pack
+==> Pack Version: 1.0beta24
+==> Pack Description: A pack for interacting with projects stored in a git repository.
+Loading /home/tony/.emacs.d/packs/stable/git-pack/init.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/git-pack/config/magit-conf.el (source)...
+Cannot determine Magit's version
+Loading /home/tony/.emacs.d/packs/stable/git-pack/config/magit-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/git-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: /home/tony/.emacs.d/packs/stable/org-pack/
+Loading /home/tony/.emacs.d/packs/stable/org-pack/info.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/org-pack/info.el (source)...done
+==> Pack name: org-pack
+==> Pack Version: 0.0.1alpha
+==> Pack Description: Org mode: http://orgmode.org/
+Loading /home/tony/.emacs.d/packs/stable/org-pack/init.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/org-pack/config/org-mode-config.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/org-pack/config/org-mode-config.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/org-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: /home/tony/.emacs.d/packs/stable/clojure-pack/
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/info.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/info.el (source)...done
+==> Pack name: emacs-live-clojure-pack
+==> Pack Version: 1.0beta24
+==> Pack Description: A fully powered pack ready for Clojure hacking. Includes: paredit, nrepl, ac-nrepl, auto-complete, clojure-mode, mic-paren, rainbow-delimiters, popup-el, and more.
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/init.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/paredit-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/paredit-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/mic-paren-conf.el (source)...
+`flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/mic-paren-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/highlight-flash-conf.el (source)...
+`flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
+`flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/highlight-flash-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/auto-complete-conf.el (source)...
+`flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
+`flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
+`flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/auto-complete-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/clojure-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/clojure-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/nrepl-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/nrepl-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/clojure-test-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/clojure-test-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: /home/tony/.emacs.d/packs/stable/bindings-pack/
+Loading /home/tony/.emacs.d/packs/stable/bindings-pack/info.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/bindings-pack/info.el (source)...done
+==> Pack name: emacs-live-bindings-pack
+==> Pack Version: 1.0beta24
+==> Pack Description: A carefully selected (and opinionated) set of bindings.
+Loading /home/tony/.emacs.d/packs/stable/bindings-pack/init.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/bindings-pack/config/default-bindings.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/bindings-pack/config/default-bindings.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/bindings-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/install-packages-pack/
 Loading /home/tony/.emacs-live-packs/install-packages-pack/info.el (source)...
 Loading /home/tony/.emacs-live-packs/install-packages-pack/info.el (source)...done
+==> Pack name: install-packs-pack
+==> Pack Version: 0.0.1
+==> Pack Description: install-packs-pack - a specific pack to help in installing other elpa/melpa/marmalade packs
 Loading /home/tony/.emacs-live-packs/install-packages-pack/init.el (source)...
+~/.emacs.d/elpa/package-store-0.3/package-store-autoloads.el:Warning: `flet'
+    is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
+~/.emacs.d/elpa/package-store-0.3/package-store-autoloads.el:Warning:
+    assignment to free variable `url-http-end-of-headers'
+~/.emacs.d/elpa/package-store-0.3/package-store-autoloads.el:Warning: `flet'
+    is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
+~/.emacs.d/elpa/package-store-0.3/package-store-autoloads.el:Warning:
+    assignment to free variable `url-http-end-of-headers'
 Loading /home/tony/.emacs-live-packs/install-packages-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs-live-packs/pack/lib/
-Loading /home/tony/.emacs-live-packs/pack/info.el (source)...
-Loading /home/tony/.emacs-live-packs/pack/info.el (source)...done
-Loading /home/tony/.emacs-live-packs/pack/init.el (source)...
-Loading /home/tony/.emacs-live-packs/pack/config/bindings.el (source)...
-Loading /home/tony/.emacs-live-packs/pack/config/bindings.el (source)...done
-Loading /home/tony/.emacs-live-packs/pack/init.el (source)...done
-Live pack lib dir: ~/.emacs-live-packs/blog-pack/lib/
-Loading /home/tony/.emacs-live-packs/blog-pack/info.el (source)...
-Loading /home/tony/.emacs-live-packs/blog-pack/info.el (source)...done
-Loading /home/tony/.emacs-live-packs/blog-pack/init.el (source)...
-Loading /home/tony/.emacs-live-packs/blog-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs-live-packs/haskell-pack/lib/
-Loading /home/tony/.emacs-live-packs/haskell-pack/info.el (source)...
-Loading /home/tony/.emacs-live-packs/haskell-pack/info.el (source)...done
-Loading /home/tony/.emacs-live-packs/haskell-pack/init.el (source)...
-Loading /home/tony/.emacs-live-packs/haskell-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs-live-packs/orgmode-pack/lib/
-Loading /home/tony/.emacs-live-packs/orgmode-pack/info.el (source)...
-Loading /home/tony/.emacs-live-packs/orgmode-pack/info.el (source)...done
-Loading /home/tony/.emacs-live-packs/orgmode-pack/init.el (source)...
-Loading /home/tony/.emacs-live-packs/orgmode-pack/config/bindings.el (source)...
-Loading /home/tony/.emacs-live-packs/orgmode-pack/config/bindings.el (source)...done
-Loading /home/tony/.emacs-live-packs/orgmode-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs-live-packs/lisp-pack/lib/
-Loading /home/tony/.emacs-live-packs/lisp-pack/info.el (source)...
-Loading /home/tony/.emacs-live-packs/lisp-pack/info.el (source)...done
-Loading /home/tony/.emacs-live-packs/lisp-pack/init.el (source)...
-Loading /home/tony/.emacs-live-packs/lisp-pack/config/bindings.el (source)...
-Loading /home/tony/.emacs-live-packs/lisp-pack/config/bindings.el (source)...done
-Loading /home/tony/.emacs-live-packs/lisp-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs-live-packs/buffer-pack/lib/
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/el-get-pack/
+Loading /home/tony/.emacs-live-packs/el-get-pack/info.el (source)...
+Loading /home/tony/.emacs-live-packs/el-get-pack/info.el (source)...done
+==> Pack name: el-get-pack
+==> Pack Version: 0.0.1
+==> Pack Description: el-get-pack - install el-get
+Loading /home/tony/.emacs-live-packs/el-get-pack/init.el (source)...
+`flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
+`flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
+Loading /home/tony/.emacs-live-packs/el-get-pack/config/bindings.el (source)...
+Loading /home/tony/.emacs-live-packs/el-get-pack/config/bindings.el (source)...done
+Loading /home/tony/.emacs-live-packs/el-get-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/buffer-pack/
 Loading /home/tony/.emacs-live-packs/buffer-pack/info.el (source)...
 Loading /home/tony/.emacs-live-packs/buffer-pack/info.el (source)...done
+==> Pack name: buffer-pack
+==> Pack Version: 0.0.1
+==> Pack Description: buffer-pack - specific setup regarding manipulating buffers
 Loading /home/tony/.emacs-live-packs/buffer-pack/init.el (source)...
 Loading /home/tony/.emacs-live-packs/buffer-pack/config/bindings.el (source)...
 Loading /home/tony/.emacs-live-packs/buffer-pack/config/bindings.el (source)...done
 Loading /home/tony/.emacs-live-packs/buffer-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs-live-packs/git-pack/lib/
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/scratch-pack/
+Loading /home/tony/.emacs-live-packs/scratch-pack/info.el (source)...
+Loading /home/tony/.emacs-live-packs/scratch-pack/info.el (source)...done
+==> Pack name: scratch-pack
+==> Pack Version: 0.0.1
+==> Pack Description: scratch-pack - some specific mess pack - need to be cleaned up
+Loading /home/tony/.emacs-live-packs/scratch-pack/init.el (source)...
+Loading /home/tony/.emacs-live-packs/scratch-pack/config/bindings.el (source)...
+Loading /home/tony/.emacs-live-packs/scratch-pack/config/bindings.el (source)...done
+Loading /home/tony/.emacs-live-packs/scratch-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/blog-pack/
+Loading /home/tony/.emacs-live-packs/blog-pack/info.el (source)...
+Loading /home/tony/.emacs-live-packs/blog-pack/info.el (source)...done
+==> Pack name: blog-pack
+==> Pack Version: 0.0.1
+==> Pack Description: blog-pack - a specific org2blog setup
+Loading /home/tony/.emacs-live-packs/blog-pack/init.el (source)...
+/home/tony/.netrc found! Running org2blog setup...
+Setup done!
+Loading /home/tony/.emacs-live-packs/blog-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/haskell-pack/
+Loading /home/tony/.emacs-live-packs/haskell-pack/info.el (source)...
+Loading /home/tony/.emacs-live-packs/haskell-pack/info.el (source)...done
+==> Pack name: haskell-pack
+==> Pack Version: 0.0.1
+==> Pack Description: haskell-pack - some specific haskell setup
+Loading /home/tony/.emacs-live-packs/haskell-pack/init.el (source)...
+(lambda (n) ...) quoted with ' rather than with #'
+Loading /home/tony/.emacs-live-packs/haskell-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/orgmode-pack/
+Loading /home/tony/.emacs-live-packs/orgmode-pack/info.el (source)...
+Loading /home/tony/.emacs-live-packs/orgmode-pack/info.el (source)...done
+==> Pack name: orgmode-pack
+==> Pack Version: 0.0.1
+==> Pack Description: orgmode-pack - some specific org-mode setup
+Loading /home/tony/.emacs-live-packs/orgmode-pack/init.el (source)...
+(lambda (el) ...) quoted with ' rather than with #'
+Loading /home/tony/.emacs-live-packs/orgmode-pack/config/bindings.el (source)...
+Loading /home/tony/.emacs-live-packs/orgmode-pack/config/bindings.el (source)...done
+Loading /home/tony/.emacs-live-packs/orgmode-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/lisp-pack/
+Loading /home/tony/.emacs-live-packs/lisp-pack/info.el (source)...
+Loading /home/tony/.emacs-live-packs/lisp-pack/info.el (source)...done
+==> Pack name: lisp-pack
+==> Pack Version: 0.0.1
+==> Pack Description: lisp-pack - some lisp specific setup
+Loading /home/tony/.emacs-live-packs/lisp-pack/init.el (source)...
+Loading /home/tony/.emacs-live-packs/lisp-pack/config/bindings.el (source)...
+Loading /home/tony/.emacs-live-packs/lisp-pack/config/bindings.el (source)...done
+Loading /home/tony/.emacs-live-packs/lisp-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/git-pack/
 Loading /home/tony/.emacs-live-packs/git-pack/info.el (source)...
 Loading /home/tony/.emacs-live-packs/git-pack/info.el (source)...done
+==> Pack name: git-pack
+==> Pack Version: 0.0.1
+==> Pack Description: git-pack - some specific magit or git setup
 Loading /home/tony/.emacs-live-packs/git-pack/init.el (source)...
 Loading /home/tony/.emacs-live-packs/git-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs-live-packs/mail-pack/lib/
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/mail-pack/
 Loading /home/tony/.emacs-live-packs/mail-pack/info.el (source)...
 Loading /home/tony/.emacs-live-packs/mail-pack/info.el (source)...done
+==> Pack name: mail-pack
+==> Pack Version: 0.0.1
+==> Pack Description: mail-pack - some specific mail setup
 Loading /home/tony/.emacs-live-packs/mail-pack/init.el (source)...
+Mail Pack - ~/.authinfo found! Running Setup...
+Mail Pack - Setup done!
 Loading /home/tony/.emacs-live-packs/mail-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs-live-packs/shell-pack/lib/
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/shell-pack/
 Loading /home/tony/.emacs-live-packs/shell-pack/info.el (source)...
 Loading /home/tony/.emacs-live-packs/shell-pack/info.el (source)...done
+==> Pack name: shell-pack
+==> Pack Version: 0.0.1
+==> Pack Description: shell-pack - specific shell setup
 Loading /home/tony/.emacs-live-packs/shell-pack/init.el (source)...
 Loading /home/tony/.emacs-live-packs/shell-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs-live-packs/browser-pack/lib/
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/browser-pack/
 Loading /home/tony/.emacs-live-packs/browser-pack/info.el (source)...
 Loading /home/tony/.emacs-live-packs/browser-pack/info.el (source)...done
+==> Pack name: browser-pack
+==> Pack Version: 0.0.1
+==> Pack Description: browser-pack - setup around browser
 Loading /home/tony/.emacs-live-packs/browser-pack/init.el (source)...
 Loading /home/tony/.emacs-live-packs/browser-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs-live-packs/chat-pack/lib/
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/chat-pack/
 Loading /home/tony/.emacs-live-packs/chat-pack/info.el (source)...
 Loading /home/tony/.emacs-live-packs/chat-pack/info.el (source)...done
+==> Pack name: chat-pack
+==> Pack Version: 0.0.1
+==> Pack Description: chat-pack - a specific gtalk setup
 Loading /home/tony/.emacs-live-packs/chat-pack/init.el (source)...
+chat-pack - You need to setup the credentials file ~/.authinfo for this to work.
+Here is the needed content to setup to your need into '~/.authinfo':
+machine jabber login <your-gmail-login> password <your-gmail-password>
 Loading /home/tony/.emacs-live-packs/chat-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs-live-packs/clojure-pack/lib/
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/clojure-pack/
 Loading /home/tony/.emacs-live-packs/clojure-pack/info.el (source)...
 Loading /home/tony/.emacs-live-packs/clojure-pack/info.el (source)...done
+==> Pack name: clojure-pack
+==> Pack Version: 0.0.1
+==> Pack Description: clojure-pack - my specific clojure setup
 Loading /home/tony/.emacs-live-packs/clojure-pack/init.el (source)...
-Loading /home/tony/.emacs-live-packs/clojure-pack/config/bindings.el (source)...
-Loading /home/tony/.emacs-live-packs/clojure-pack/config/bindings.el (source)...done
+Loading /home/tony/.emacs-live-packs/clojure-pack/config/bindings.el...
+Loading /home/tony/.emacs-live-packs/clojure-pack/config/bindings.el...done
 Loading /home/tony/.emacs-live-packs/clojure-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs-live-packs/nrepl-pack/lib/
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/nrepl-pack/
 Loading /home/tony/.emacs-live-packs/nrepl-pack/info.el (source)...
 Loading /home/tony/.emacs-live-packs/nrepl-pack/info.el (source)...done
+==> Pack name: nrepl-pack
+==> Pack Version: 0.0.1alpha
+==> Pack Description: user nrepl pack - to customize nrepl's behaviour.
 Loading /home/tony/.emacs-live-packs/nrepl-pack/init.el (source)...
 Loading /home/tony/.emacs-live-packs/nrepl-pack/config/bindings.el (source)...
 Loading /home/tony/.emacs-live-packs/nrepl-pack/config/bindings.el (source)...done
 Loading /home/tony/.emacs-live-packs/nrepl-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs-live-packs/clojurescript-pack/lib/
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/clojurescript-pack/
 Loading /home/tony/.emacs-live-packs/clojurescript-pack/info.el (source)...
 Loading /home/tony/.emacs-live-packs/clojurescript-pack/info.el (source)...done
+==> Pack name: clojurescript-pack
+==> Pack Version: 0.0.1
+==> Pack Description: clojurescript-pack - my specific clojurescript setup
 Loading /home/tony/.emacs-live-packs/clojurescript-pack/init.el (source)...
 Loading /home/tony/.emacs-live-packs/clojurescript-pack/config/bindings.el (source)...
 Loading /home/tony/.emacs-live-packs/clojurescript-pack/config/bindings.el (source)...done
 Loading /home/tony/.emacs-live-packs/clojurescript-pack/init.el (source)...done
-Live pack lib dir: ~/.emacs-live-packs/caml-pack/lib/
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/caml-pack/
 Loading /home/tony/.emacs-live-packs/caml-pack/info.el (source)...
 Loading /home/tony/.emacs-live-packs/caml-pack/info.el (source)...done
+==> Pack name: caml-pack
+==> Pack Version: 0.0.1alpha
+==> Pack Description: caml-pack
 Loading /home/tony/.emacs-live-packs/caml-pack/init.el (source)...
 Loading /home/tony/.emacs-live-packs/caml-pack/config/bindings.el (source)...
 Loading /home/tony/.emacs-live-packs/caml-pack/config/bindings.el (source)...done
 Loading /home/tony/.emacs-live-packs/caml-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/modeline-pack/
+Loading /home/tony/.emacs-live-packs/modeline-pack/info.el (source)...
+Loading /home/tony/.emacs-live-packs/modeline-pack/info.el (source)...done
+==> Pack name: modeline-pack
+==> Pack Version: 0.0.1alpha
+==> Pack Description: modeline-pack - to manipulate the emacs-modeline
+Loading /home/tony/.emacs-live-packs/modeline-pack/init.el (source)...
+Loading /home/tony/.emacs-live-packs/modeline-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/twitter-pack/
+Loading /home/tony/.emacs-live-packs/twitter-pack/info.el (source)...
+Loading /home/tony/.emacs-live-packs/twitter-pack/info.el (source)...done
+==> Pack name: twitter-pack
+==> Pack Version: 0.0.1alpha
+==> Pack Description: twitter pack
+Loading /home/tony/.emacs-live-packs/twitter-pack/init.el (source)...
+Loading /home/tony/.emacs-live-packs/twitter-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/puppet-pack/
+Loading /home/tony/.emacs-live-packs/puppet-pack/info.el (source)...
+Loading /home/tony/.emacs-live-packs/puppet-pack/info.el (source)...done
+==> Pack name: puppet-pack
+==> Pack Version: 0.0.1alpha
+==> Pack Description: Puppet pack - setup puppet modes.
+Loading /home/tony/.emacs-live-packs/puppet-pack/init.el (source)...
+Loading /home/tony/.emacs-live-packs/puppet-pack/config/bindings.el (source)...
+Loading /home/tony/.emacs-live-packs/puppet-pack/config/bindings.el (source)...done
+Loading /home/tony/.emacs-live-packs/puppet-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/macro-pack/
+Loading /home/tony/.emacs-live-packs/macro-pack/info.el (source)...
+Loading /home/tony/.emacs-live-packs/macro-pack/info.el (source)...done
+==> Pack name: macro-pack
+==> Pack Version: 0.0.1
+==> Pack Description: macro-pack - some specific pack regarding macros.
+Loading /home/tony/.emacs-live-packs/macro-pack/init.el (source)...
+Loading /home/tony/.emacs-live-packs/macro-pack/config/bindings.el (source)...
+Loading /home/tony/.emacs-live-packs/macro-pack/config/bindings.el (source)...done
+Loading /home/tony/.emacs-live-packs/macro-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/scala-pack/
+Loading /home/tony/.emacs-live-packs/scala-pack/info.el (source)...
+Loading /home/tony/.emacs-live-packs/scala-pack/info.el (source)...done
+==> Pack name: scala-pack
+==> Pack Version: 0.0.1alpha
+==> Pack Description: Scala setup pack
+Loading /home/tony/.emacs-live-packs/scala-pack/init.el (source)...
+Proceeding with the scala setup...
+(lambda (cand) ...) quoted with ' rather than with #'
+(lambda (x) ...) quoted with ' rather than with #'
+Eager macro-expansion failure: (error "(ensime-builder-changed-files (ensime-connection)) is not a valid place expression")
+Eager macro-expansion failure: (error "(ensime-builder-changed-files (ensime-connection)) is not a valid place expression")
+Eager macro-expansion failure: (error "(ensime-builder-changed-files (ensime-connection)) is not a valid place expression")
+`flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
+Loading /home/tony/.emacs-live-packs/scala-pack/config/bindings.el (source)...
+Loading /home/tony/.emacs-live-packs/scala-pack/config/bindings.el (source)...done
+Loading /home/tony/.emacs-live-packs/scala-pack/config/akka/utils.el (source)...
+Loading /home/tony/.emacs-live-packs/scala-pack/config/akka/utils.el (source)...done
+Loading /home/tony/.emacs-live-packs/scala-pack/config/scala/utils.el (source)...
+Loading /home/tony/.emacs-live-packs/scala-pack/config/scala/utils.el (source)...done
+Loading /home/tony/.emacs-live-packs/scala-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/elisp-pack/
+Loading /home/tony/.emacs-live-packs/elisp-pack/info.el (source)...
+Loading /home/tony/.emacs-live-packs/elisp-pack/info.el (source)...done
+==> Pack name: elisp-pack
+==> Pack Version: 0.0.1alpha
+==> Pack Description: elisp-pack
+Loading /home/tony/.emacs-live-packs/elisp-pack/init.el (source)...
+Loading /home/tony/.emacs-live-packs/elisp-pack/config/bindings.el (source)...
+Loading /home/tony/.emacs-live-packs/elisp-pack/config/bindings.el (source)...done
+Loading /home/tony/.emacs-live-packs/elisp-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/php-pack/
+Loading /home/tony/.emacs-live-packs/php-pack/info.el (source)...
+Loading /home/tony/.emacs-live-packs/php-pack/info.el (source)...done
+==> Pack name: php-pack
+==> Pack Version: 0.0.1alpha
+==> Pack Description: PHP pack
+Loading /home/tony/.emacs-live-packs/php-pack/init.el (source)...
+Loading /home/tony/.emacs-live-packs/php-pack/config/bindings.el (source)...
+Loading /home/tony/.emacs-live-packs/php-pack/config/bindings.el (source)...done
+Loading /home/tony/.emacs-live-packs/php-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/ctags-pack/
+Loading /home/tony/.emacs-live-packs/ctags-pack/info.el (source)...
+Loading /home/tony/.emacs-live-packs/ctags-pack/info.el (source)...done
+==> Pack name: ctags-pack
+==> Pack Version: 1.0.2
+==> Pack Description: An opinionated and automated ctags setup for Emacs Live
+Loading /home/tony/.emacs-live-packs/ctags-pack/init.el (source)...
+Loading /home/tony/.emacs-live-packs/ctags-pack/config/ctags-conf.el (source)...
+Loading /home/tony/.emacs-live-packs/ctags-pack/config/ctags-conf.el (source)...done
+Loading /home/tony/.emacs-live-packs/ctags-pack/init.el (source)...done
+
+
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/prelude-pack/
+Loading /home/tony/.emacs-live-packs/prelude-pack/info.el (source)...
+Loading /home/tony/.emacs-live-packs/prelude-pack/info.el (source)...done
+==> Pack name: prelude-pack
+==> Pack Version: 0.0.1
+==> Pack Description: prelude-pack - Wrapper around prelude-core which offers some awesome functions.
+Loading /home/tony/.emacs-live-packs/prelude-pack/init.el (source)...
+Loading /home/tony/.emacs-live-packs/prelude-pack/init.el (source)...done
+[yas] Loading for `emacs-lisp-mode', just-in-time: (lambda nil (yas--load-directory-1 (quote /home/tony/.emacs.d/etc/snippets/emacs-lisp-mode) (quote emacs-lisp-mode)))!
+[yas] Loading compiled snippets from /home/tony/.emacs.d/etc/snippets/emacs-lisp-mode
+[yas] Loading for `text-mode', just-in-time: (lambda nil (yas--load-directory-1 (quote /home/tony/.emacs.d/etc/snippets/text-mode) (quote text-mode)))!
+[yas] Loading compiled snippets from /home/tony/.emacs.d/etc/snippets/text-mode
+Starting Emacs daemon.
+Unable to start the daemon.
+Another instance of Emacs is running the server, either as daemon or interactively.
+You can use emacsclient to connect to that Emacs process.
+Wrote /home/tony/.emacs.d/tmp/ac-comphist.dat
+Saving file /home/tony/.ido.last...
+Warning: defvar ignored because whitespace-style is let-bound
+Wrote /home/tony/.ido.last
+Wrote /home/tony/.emacs.d/tmp/places
+Saving file /home/tony/.emacs.d/tmp/recentf...
+Loading vc-git...
+Loading vc-git...done
+Wrote /home/tony/.emacs.d/tmp/recentf
 Starting Emacs daemon.
 ```
