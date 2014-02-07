@@ -30,7 +30,7 @@
                                    "macro-pack"
                                    "scala-pack"
                                    "elisp-pack"
-;;                                   "groovy-pack"
+                                   "groovy-pack"
                                    "php-pack"
                                    "ctags-pack"
                                    "prelude-pack"))
