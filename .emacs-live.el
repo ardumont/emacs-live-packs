@@ -20,7 +20,7 @@
                                    "browser-pack"
                                    "chat-pack"            ;; irc credential setup
                                    "clojure-pack"
-                                   "nrepl-pack"           ;; nrepl override bindings from nrepl
+;;                                   "nrepl-pack"           ;; nrepl override bindings from nrepl
                                    "clojurescript-pack"
                                    "caml-pack"
                                    "modeline-pack"        ;; adding stuff regarding emacs modeline
