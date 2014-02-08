@@ -114,8 +114,9 @@ emacs --daemon
 This will install emacs packages needed if they are not already installed.
 
 ```sh
-# tony at dagobah in ~/repo/perso/emacs-live-packs on git:master x [20:30:00]
-$ emacs --daemon
+# tony at dagobah in ~/repo/perso/emacs-live-packs on git:master o [10:23:28]
+$ start-emacs.sh
++ emacs --daemon
 
 Warning: due to a long standing Gtk+ bug
 http://bugzilla.gnome.org/show_bug.cgi?id=85715
@@ -134,6 +135,26 @@ Loading /var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...done
 Loading /etc/emacs/site-start.d/50dictionaries-common.el (source)...done
 Loading /etc/emacs/site-start.d/50windows-el.el (source)...
 Loading /etc/emacs/site-start.d/50windows-el.el (source)...done
+
+
+;;
+;;     MM""""""""`M
+;;     MM  mmmmmmmM
+;;     M`      MMMM 88d8b.d8b. .d8888b. .d8888b. .d8888b.
+;;     MM  MMMMMMMM 88''88'`88 88'  `88 88'  `"" Y8ooooo.
+;;     MM  MMMMMMMM 88  88  88 88.  .88 88.  ...       88
+;;     MM        .M dP  dP  dP `88888P8 '88888P' '88888P'
+;;     MMMMMMMMMMMM
+;;
+;;         M""MMMMMMMM M""M M""MMMMM""M MM""""""""`M
+;;         M  MMMMMMMM M  M M  MMMMM  M MM  mmmmmmmM
+;;         M  MMMMMMMM M  M M  MMMMP  M M`      MMMM
+;;         M  MMMMMMMM M  M M  MMMM' .M MM  MMMMMMMM
+;;         M  MMMMMMMM M  M M  MMP' .MM MM  MMMMMMMM
+;;         M         M M  M M     .dMMM MM        .M
+;;         MMMMMMMMMMM MMMM MMMMMMMMMMM MMMMMMMMMMMM 
+
+
 Loading /home/tony/.emacs.d/manifest.el (source)...
 Loading /home/tony/.emacs.d/manifest.el (source)...done
 Loading /home/tony/.emacs.d/lib/live-core.el (source)...
@@ -159,7 +180,8 @@ Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/built-in.el (sou
 Loading /home/tony/.emacs.d/tmp/recentf...
 Loading /home/tony/.emacs.d/tmp/recentf...done
 Cleaning up the recentf list...
-Cleaning up the recentf list...done (0 removed)
+File /home/tony/repo/perso/arduino-lab/.nrepl-port removed from the recentf list
+Cleaning up the recentf list...done (1 removed)
 Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/built-in.el (source)...done
 Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/cosmetic.el (source)...
 Loading /home/tony/.emacs.d/packs/stable/foundation-pack/config/cosmetic.el (source)...done
@@ -262,6 +284,10 @@ Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/js2-conf.el (source)..
 Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/js2-conf.el (source)...done
 Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/glsl-conf.el (source)...
 Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/glsl-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/extempore-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/extempore-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/haskell-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/lang-pack/config/haskell-conf.el (source)...done
 Loading /home/tony/.emacs.d/packs/stable/lang-pack/init.el (source)...done
 
 
@@ -295,27 +321,13 @@ Loading /home/tony/.emacs.d/packs/stable/power-pack/config/expand-region-conf.el
 Loading /home/tony/.emacs.d/packs/stable/power-pack/config/ace-jump-mode-conf.el (source)...
 Loading /home/tony/.emacs.d/packs/stable/power-pack/config/ace-jump-mode-conf.el (source)...done
 Loading /home/tony/.emacs.d/packs/stable/power-pack/config/multiple-cursors-conf.el (source)...
-~/.emacs.d/packs/stable/power-pack/lib/multiple-cursors/multiple-cursors-core.el:Warning:
-    reference to free variable `multiple-cursors-mode'
-~/.emacs.d/packs/stable/power-pack/lib/multiple-cursors/multiple-cursors-core.el:Warning:
-    reference to free variable `mc--read-char'
-~/.emacs.d/packs/stable/power-pack/lib/multiple-cursors/multiple-cursors-core.el:Warning:
-    assignment to free variable `mc--read-char'
-~/.emacs.d/packs/stable/power-pack/lib/multiple-cursors/multiple-cursors-core.el:Warning:
-    reference to free variable `multiple-cursors-mode'
-~/.emacs.d/packs/stable/power-pack/lib/multiple-cursors/multiple-cursors-core.el:Warning:
-    reference to free variable `mc--read-quoted-char'
-~/.emacs.d/packs/stable/power-pack/lib/multiple-cursors/multiple-cursors-core.el:Warning:
-    assignment to free variable `mc--read-quoted-char'
-Loading /home/tony/.emacs.d/.mc-lists.el (source)...
-Loading /home/tony/.emacs.d/.mc-lists.el (source)...done
-~/.emacs.d/packs/stable/power-pack/lib/multiple-cursors/rectangular-region-mode.el:Warning:
-    reference to free variable `rectangular-region-mode'
-~/.emacs.d/packs/stable/power-pack/lib/multiple-cursors/rectangular-region-mode.el:Warning:
-    reference to free variable `rectangular-region-mode'
 Loading /home/tony/.emacs.d/packs/stable/power-pack/config/multiple-cursors-conf.el (source)...done
 Loading /home/tony/.emacs.d/packs/stable/power-pack/config/git-gutter-conf.el (source)...
 Loading /home/tony/.emacs.d/packs/stable/power-pack/config/git-gutter-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/floobits-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/floobits-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/wc-mode-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/power-pack/config/wc-mode-conf.el (source)...done
 Loading /home/tony/.emacs.d/packs/stable/power-pack/init.el (source)...done
 
 
@@ -349,17 +361,13 @@ Loading /home/tony/.emacs.d/packs/stable/clojure-pack/info.el (source)...
 Loading /home/tony/.emacs.d/packs/stable/clojure-pack/info.el (source)...done
 ==> Pack name: emacs-live-clojure-pack
 ==> Pack Version: 1.0beta24
-==> Pack Description: A fully powered pack ready for Clojure hacking. Includes: paredit, nrepl, ac-nrepl, auto-complete, clojure-mode, mic-paren, rainbow-delimiters, popup-el, and more.
+==> Pack Description: A fully powered pack ready for Clojure hacking. Includes: paredit, cider, ac-nrepl, auto-complete, clojure-mode, mic-paren, rainbow-delimiters, popup-el, and more.
 Loading /home/tony/.emacs.d/packs/stable/clojure-pack/init.el (source)...
 Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/paredit-conf.el (source)...
 Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/paredit-conf.el (source)...done
 Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/mic-paren-conf.el (source)...
 `flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
 Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/mic-paren-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/highlight-flash-conf.el (source)...
-`flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
-`flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
-Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/highlight-flash-conf.el (source)...done
 Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/auto-complete-conf.el (source)...
 `flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
 `flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
@@ -367,8 +375,13 @@ Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/auto-complete-conf.
 Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/auto-complete-conf.el (source)...done
 Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/clojure-conf.el (source)...
 Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/clojure-conf.el (source)...done
-Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/nrepl-conf.el (source)...
-Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/nrepl-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/cider-conf.el (source)...
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/cider-conf.el (source)...done
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/highlight-flash-conf.el (source)...
+`labels' is an obsolete macro (as of 24.3); use `cl-labels' instead.
+`flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
+`flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
+Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/highlight-flash-conf.el (source)...done
 Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/clojure-test-conf.el (source)...
 Loading /home/tony/.emacs.d/packs/stable/clojure-pack/config/clojure-test-conf.el (source)...done
 Loading /home/tony/.emacs.d/packs/stable/clojure-pack/init.el (source)...done
@@ -557,18 +570,6 @@ Loading /home/tony/.emacs-live-packs/clojure-pack/config/bindings.el...done
 Loading /home/tony/.emacs-live-packs/clojure-pack/init.el (source)...done
 
 
-==> Loading Emacs Live Pack: ~/.emacs-live-packs/nrepl-pack/
-Loading /home/tony/.emacs-live-packs/nrepl-pack/info.el (source)...
-Loading /home/tony/.emacs-live-packs/nrepl-pack/info.el (source)...done
-==> Pack name: nrepl-pack
-==> Pack Version: 0.0.1alpha
-==> Pack Description: user nrepl pack - to customize nrepl's behaviour.
-Loading /home/tony/.emacs-live-packs/nrepl-pack/init.el (source)...
-Loading /home/tony/.emacs-live-packs/nrepl-pack/config/bindings.el (source)...
-Loading /home/tony/.emacs-live-packs/nrepl-pack/config/bindings.el (source)...done
-Loading /home/tony/.emacs-live-packs/nrepl-pack/init.el (source)...done
-
-
 ==> Loading Emacs Live Pack: ~/.emacs-live-packs/clojurescript-pack/
 Loading /home/tony/.emacs-live-packs/clojurescript-pack/info.el (source)...
 Loading /home/tony/.emacs-live-packs/clojurescript-pack/info.el (source)...done
@@ -672,6 +673,18 @@ Loading /home/tony/.emacs-live-packs/elisp-pack/config/bindings.el (source)...do
 Loading /home/tony/.emacs-live-packs/elisp-pack/init.el (source)...done
 
 
+==> Loading Emacs Live Pack: ~/.emacs-live-packs/groovy-pack/
+Loading /home/tony/.emacs-live-packs/groovy-pack/info.el (source)...
+Loading /home/tony/.emacs-live-packs/groovy-pack/info.el (source)...done
+==> Pack name: groovy-pack
+==> Pack Version: 0.0.1alpha
+==> Pack Description: Groovy pack
+Loading /home/tony/.emacs-live-packs/groovy-pack/init.el (source)...
+Loading /home/tony/.emacs-live-packs/groovy-pack/config/bindings.el (source)...
+Loading /home/tony/.emacs-live-packs/groovy-pack/config/bindings.el (source)...done
+Loading /home/tony/.emacs-live-packs/groovy-pack/init.el (source)...done
+
+
 ==> Loading Emacs Live Pack: ~/.emacs-live-packs/php-pack/
 Loading /home/tony/.emacs-live-packs/php-pack/info.el (source)...
 Loading /home/tony/.emacs-live-packs/php-pack/info.el (source)...done
@@ -704,22 +717,10 @@ Loading /home/tony/.emacs-live-packs/prelude-pack/info.el (source)...done
 ==> Pack Description: prelude-pack - Wrapper around prelude-core which offers some awesome functions.
 Loading /home/tony/.emacs-live-packs/prelude-pack/init.el (source)...
 Loading /home/tony/.emacs-live-packs/prelude-pack/init.el (source)...done
-[yas] Loading for `emacs-lisp-mode', just-in-time: (lambda nil (yas--load-directory-1 (quote /home/tony/.emacs.d/etc/snippets/emacs-lisp-mode) (quote emacs-lisp-mode)))!
-[yas] Loading compiled snippets from /home/tony/.emacs.d/etc/snippets/emacs-lisp-mode
-[yas] Loading for `text-mode', just-in-time: (lambda nil (yas--load-directory-1 (quote /home/tony/.emacs.d/etc/snippets/text-mode) (quote text-mode)))!
-[yas] Loading compiled snippets from /home/tony/.emacs.d/etc/snippets/text-mode
-Starting Emacs daemon.
-Unable to start the daemon.
-Another instance of Emacs is running the server, either as daemon or interactively.
-You can use emacsclient to connect to that Emacs process.
-Wrote /home/tony/.emacs.d/tmp/ac-comphist.dat
-Saving file /home/tony/.ido.last...
-Warning: defvar ignored because whitespace-style is let-bound
-Wrote /home/tony/.ido.last
-Wrote /home/tony/.emacs.d/tmp/places
-Saving file /home/tony/.emacs.d/tmp/recentf...
-Loading vc-git...
-Loading vc-git...done
-Wrote /home/tony/.emacs.d/tmp/recentf
+
+
+ Pack loading completed. Your Emacs is Live...
+   
+  
 Starting Emacs daemon.
 ```
