@@ -7,29 +7,29 @@ My emacs-live packs setup to use with the most excellent [emacs-live](https://gi
 
 Some packs still need some lovin' but most are ready:
 
-- [install-packages-pack](https://github.com/ardumont/install-packages-pack)  some installation repository setup + function to install list of packages
-- [scratch-pack](https://github.com/ardumont/scratch-pack)                    not yet sorted out stuff
-- [blog-pack](https://github.com/ardumont/blog-pack)                          blog setup to rapidly post article from org-mode to wordpress
-- [haskell-pack](https://github.com/ardumont/haskell-pack)                    haskell environment setup
-- [orgmode-pack](https://github.com/ardumont/orgmode-pack)                    some org-mode specificities
-- [lisp-pack](https://github.com/ardumont/lisp-pack)                          lisp environment setup
-- [buffer-pack](https://github.com/ardumont/buffer-pack)                      some buffer manipulation functions
-- [git-pack](https://github.com/ardumont/git-pack)                            git specific setup
-- [mail-pack](https://github.com/ardumont/mail-pack)                          email setup
-- [shell-pack](https://github.com/ardumont/shell-pack)                        shell setup
-- [browser-pack](https://github.com/ardumont/browser-pack)                    browser specific tryouts
-- [chat-pack](https://github.com/ardumont/chat-pack)                          irc setup
-- [clojure-pack](https://github.com/ardumont/clojure-pack)                    clojure override from emacs-live's defaults + other stuff
-- [nrepl-pack](https://github.com/ardumont/nrepl-pack)                        nrepl override setup
-- [clojurescript-pack](https://github.com/ardumont/clojurescript-pack)        clojurescript setup
-- [caml-pack](https://github.com/ardumont/caml-pack)                          some caml setup
-- [twitter-pack](https://github.com/ardumont/twitter-pack)                    twitter setup
-- [puppet-pack](https://github.com/ardumont/puppet-pack)                      puppet setup
-- [chrome-pack](https://github.com/ardumont/chrome-pack)                      chrome setup
-- [macro-pack](https://github.com/ardumont/macro-pack)                        macro setup
-- [scala-pack](https://github.com/ardumont/scala-pack)                        scala pack
-- [lisp-pack](https://github.com/ardumont/lisp-pack)                          all lisp (clojure, common-lisp) setup pack
-- [elisp-pack](https://github.com/ardumont/elisp-pack)                        emacs-lisp pack (more specific than the previous one)
+- [install-packages-pack](https://github.com/ardumont/install-packages-pack.git)  some installation repository setup + function to install list of packages
+- [scratch-pack](https://github.com/ardumont/scratch-pack.git)                    not yet sorted out stuff
+- [blog-pack](https://github.com/ardumont/blog-pack.git)                          blog setup to rapidly post article from org-mode to wordpress
+- [haskell-pack](https://github.com/ardumont/haskell-pack.git)                    haskell environment setup
+- [orgmode-pack](https://github.com/ardumont/orgmode-pack.git)                    some org-mode specificities
+- [lisp-pack](https://github.com/ardumont/lisp-pack.git)                          lisp environment setup
+- [buffer-pack](https://github.com/ardumont/buffer-pack.git)                      some buffer manipulation functions
+- [git-pack](https://github.com/ardumont/git-pack.git)                            git specific setup
+- [mail-pack](https://github.com/ardumont/mail-pack.git)                          email setup
+- [shell-pack](https://github.com/ardumont/shell-pack.git)                        shell setup
+- [browser-pack](https://github.com/ardumont/browser-pack.git)                    browser specific tryouts
+- [chat-pack](https://github.com/ardumont/chat-pack.git)                          irc setup
+- [clojure-pack](https://github.com/ardumont/clojure-pack.git)                    clojure override from emacs-live's defaults + other stuff
+- [nrepl-pack](https://github.com/ardumont/nrepl-pack.git)                        nrepl override setup
+- [clojurescript-pack](https://github.com/ardumont/clojurescript-pack.git)        clojurescript setup
+- [caml-pack](https://github.com/ardumont/caml-pack.git)                          some caml setup
+- [twitter-pack](https://github.com/ardumont/twitter-pack.git)                    twitter setup
+- [puppet-pack](https://github.com/ardumont/puppet-pack.git)                      puppet setup
+- [chrome-pack](https://github.com/ardumont/chrome-pack.git)                      chrome setup
+- [macro-pack](https://github.com/ardumont/macro-pack.git)                        macro setup
+- [scala-pack](https://github.com/ardumont/scala-pack.git)                        scala pack
+- [lisp-pack](https://github.com/ardumont/lisp-pack.git)                          all lisp (clojure, common-lisp) setup pack
+- [elisp-pack](https://github.com/ardumont/elisp-pack.git)                        emacs-lisp pack (more specific than the previous one)
 
 *Note*
 This pack is an orchestrator.
