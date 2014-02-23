@@ -7,37 +7,37 @@ My emacs-live packs setup to use with the most excellent [emacs-live](https://gi
 
 Some packs still need some lovin' but most are ready:
 
-- [install-packages-pack](https://github.com/ardumont/install-packages-pack.git)  some installation repository setup + function to install list of packages
-- [scratch-pack](https://github.com/ardumont/scratch-pack.git)                    not yet sorted out stuff
-- [blog-pack](https://github.com/ardumont/blog-pack.git)                          blog setup to rapidly post article from org-mode to wordpress
-- [haskell-pack](https://github.com/ardumont/haskell-pack.git)                    haskell environment setup
-- [orgmode-pack](https://github.com/ardumont/orgmode-pack.git)                    some org-mode specificities
-- [lisp-pack](https://github.com/ardumont/lisp-pack.git)                          lisp environment setup
-- [buffer-pack](https://github.com/ardumont/buffer-pack.git)                      some buffer manipulation functions
-- [git-pack](https://github.com/ardumont/git-pack.git)                            git specific setup
-- [mail-pack](https://github.com/ardumont/mail-pack.git)                          email setup
-- [shell-pack](https://github.com/ardumont/shell-pack.git)                        shell setup
-- [browser-pack](https://github.com/ardumont/browser-pack.git)                    browser specific tryouts
-- [chat-pack](https://github.com/ardumont/chat-pack.git)                          irc setup
-- [clojure-pack](https://github.com/ardumont/clojure-pack.git)                    clojure override from emacs-live's defaults + other stuff
-- [nrepl-pack](https://github.com/ardumont/nrepl-pack.git)                        nrepl override setup
-- [clojurescript-pack](https://github.com/ardumont/clojurescript-pack.git)        clojurescript setup
-- [caml-pack](https://github.com/ardumont/caml-pack.git)                          ML family languages setup
-- [twitter-pack](https://github.com/ardumont/twitter-pack.git)                    Twitter setup
-- [puppet-pack](https://github.com/ardumont/puppet-pack.git)                      Puppet setup
-- [chrome-pack](https://github.com/ardumont/chrome-pack.git)                      Chrome setup
-- [macro-pack](https://github.com/ardumont/macro-pack.git)                        Macro setup
-- [scala-pack](https://github.com/ardumont/scala-pack.git)                        Scala pack
-- [lisp-pack](https://github.com/ardumont/lisp-pack.git)                          All lisp (clojure, common-lisp) setup pack
-- [elisp-pack](https://github.com/ardumont/elisp-pack.git)                        Emacs-lisp pack (more specific than the previous one)
-- [ctags-pack](https://github.com/ardumont/ctags-pack.git)                        Add packs tag generation to help in browsing in various dev environment
-- [el-get-pack](https://github.com/ardumont/el-get-pack.git)                      Attempt to permit the use of el-get
-- [groovy-pack](https://github.com/ardumont/groovy-pack.git)                      Pack to add groovy mode
-- [modeline-pack](https://github.com/ardumont/modeline-pack.git)                  Improve modeline rendering
-- [php-pack](https://github.com/ardumont/php-pack.git)                            PHP mode
-- [prelude-pack](https://github.com/ardumont/prelude-pack.git)                    Add some prelude greatness
-- [scratch-pack](https://github.com/ardumont/scratch-pack.git)                    Tinkering pack
-- [stumpwm-pack](https://github.com/ardumont/stumpwm-pack.git)                    Stumpwm tinkering from the repl confort
+- [install-packages-pack](https://github.com/ardumont/install-packages-pack)  some installation repository setup + function to install list of packages
+- [scratch-pack](https://github.com/ardumont/scratch-pack)                    not yet sorted out stuff
+- [blog-pack](https://github.com/ardumont/blog-pack)                          blog setup to rapidly post article from org-mode to wordpress
+- [haskell-pack](https://github.com/ardumont/haskell-pack)                    haskell environment setup
+- [orgmode-pack](https://github.com/ardumont/orgmode-pack)                    some org-mode specificities
+- [lisp-pack](https://github.com/ardumont/lisp-pack)                          lisp environment setup
+- [buffer-pack](https://github.com/ardumont/buffer-pack)                      some buffer manipulation functions
+- [git-pack](https://github.com/ardumont/git-pack)                            git specific setup
+- [mail-pack](https://github.com/ardumont/mail-pack)                          email setup
+- [shell-pack](https://github.com/ardumont/shell-pack)                        shell setup
+- [browser-pack](https://github.com/ardumont/browser-pack)                    browser specific tryouts
+- [chat-pack](https://github.com/ardumont/chat-pack)                          irc setup
+- [clojure-pack](https://github.com/ardumont/clojure-pack)                    clojure override from emacs-live's defaults + other stuff
+- [nrepl-pack](https://github.com/ardumont/nrepl-pack)                        nrepl override setup
+- [clojurescript-pack](https://github.com/ardumont/clojurescript-pack)        clojurescript setup
+- [caml-pack](https://github.com/ardumont/caml-pack)                          ML family languages setup
+- [twitter-pack](https://github.com/ardumont/twitter-pack)                    Twitter setup
+- [puppet-pack](https://github.com/ardumont/puppet-pack)                      Puppet setup
+- [chrome-pack](https://github.com/ardumont/chrome-pack)                      Chrome setup
+- [macro-pack](https://github.com/ardumont/macro-pack)                        Macro setup
+- [scala-pack](https://github.com/ardumont/scala-pack)                        Scala pack
+- [lisp-pack](https://github.com/ardumont/lisp-pack)                          All lisp (clojure, common-lisp) setup pack
+- [elisp-pack](https://github.com/ardumont/elisp-pack)                        Emacs-lisp pack (more specific than the previous one)
+- [ctags-pack](https://github.com/ardumont/ctags-pack)                        Add packs tag generation to help in browsing in various dev environment
+- [el-get-pack](https://github.com/ardumont/el-get-pack)                      Attempt to permit the use of el-get
+- [groovy-pack](https://github.com/ardumont/groovy-pack)                      Pack to add groovy mode
+- [modeline-pack](https://github.com/ardumont/modeline-pack)                  Improve modeline rendering
+- [php-pack](https://github.com/ardumont/php-pack)                            PHP mode
+- [prelude-pack](https://github.com/ardumont/prelude-pack)                    Add some prelude greatness
+- [scratch-pack](https://github.com/ardumont/scratch-pack)                    Tinkering pack
+- [stumpwm-pack](https://github.com/ardumont/stumpwm-pack)                    Stumpwm tinkering from the repl
 
 *Note*
 This pack is an orchestrator.
