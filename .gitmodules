@@ -85,3 +85,6 @@
 [submodule "prelude-pack"]
 	path = prelude-pack
 	url = git@github.com:ardumont/prelude-pack.git
+[submodule "stumpwm-pack"]
+	path = stumpwm-pack
+	url = git@github.com:ardumont/stumpwm-pack.git
