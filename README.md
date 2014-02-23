@@ -22,14 +22,22 @@ Some packs still need some lovin' but most are ready:
 - [clojure-pack](https://github.com/ardumont/clojure-pack.git)                    clojure override from emacs-live's defaults + other stuff
 - [nrepl-pack](https://github.com/ardumont/nrepl-pack.git)                        nrepl override setup
 - [clojurescript-pack](https://github.com/ardumont/clojurescript-pack.git)        clojurescript setup
-- [caml-pack](https://github.com/ardumont/caml-pack.git)                          some caml setup
-- [twitter-pack](https://github.com/ardumont/twitter-pack.git)                    twitter setup
-- [puppet-pack](https://github.com/ardumont/puppet-pack.git)                      puppet setup
-- [chrome-pack](https://github.com/ardumont/chrome-pack.git)                      chrome setup
-- [macro-pack](https://github.com/ardumont/macro-pack.git)                        macro setup
-- [scala-pack](https://github.com/ardumont/scala-pack.git)                        scala pack
-- [lisp-pack](https://github.com/ardumont/lisp-pack.git)                          all lisp (clojure, common-lisp) setup pack
-- [elisp-pack](https://github.com/ardumont/elisp-pack.git)                        emacs-lisp pack (more specific than the previous one)
+- [caml-pack](https://github.com/ardumont/caml-pack.git)                          ML family languages setup
+- [twitter-pack](https://github.com/ardumont/twitter-pack.git)                    Twitter setup
+- [puppet-pack](https://github.com/ardumont/puppet-pack.git)                      Puppet setup
+- [chrome-pack](https://github.com/ardumont/chrome-pack.git)                      Chrome setup
+- [macro-pack](https://github.com/ardumont/macro-pack.git)                        Macro setup
+- [scala-pack](https://github.com/ardumont/scala-pack.git)                        Scala pack
+- [lisp-pack](https://github.com/ardumont/lisp-pack.git)                          All lisp (clojure, common-lisp) setup pack
+- [elisp-pack](https://github.com/ardumont/elisp-pack.git)                        Emacs-lisp pack (more specific than the previous one)
+- [ctags-pack](https://github.com/ardumont/ctags-pack.git)                        Add packs tag generation to help in browsing in various dev environment
+- [el-get-pack](https://github.com/ardumont/el-get-pack.git)                      Attempt to permit the use of el-get
+- [groovy-pack](https://github.com/ardumont/groovy-pack.git)                      Pack to add groovy mode
+- [modeline-pack](https://github.com/ardumont/modeline-pack.git)                  Improve modeline rendering
+- [php-pack](https://github.com/ardumont/php-pack.git)                            PHP mode
+- [prelude-pack](https://github.com/ardumont/prelude-pack.git)                    Add some prelude greatness
+- [scratch-pack](https://github.com/ardumont/scratch-pack.git)                    Tinkering pack
+- [stumpwm-pack](https://github.com/ardumont/stumpwm-pack.git)                    Stumpwm tinkering from the repl confort
 
 *Note*
 This pack is an orchestrator.
