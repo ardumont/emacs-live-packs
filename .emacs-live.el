@@ -5,7 +5,7 @@
 
 (emacs-live-packs/add-live-packs "~/.emacs-live-packs/"
                                  '("install-packages-pack";; installing emacs repositories (melpa, milkbox, marmalade) and the install-packs utility function
-                                   "el-get-pack"
+;;                                   "el-get-pack"
                                    "buffer-pack"          ;; a pack to mess around until drying stuff
                                    "scratch-pack"
                                    "blog-pack"            ;; a setup blog pack for wordpress
