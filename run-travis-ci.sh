@@ -12,4 +12,4 @@ echo "CURRENT_EMACS = $CURRENT_EMACS"
 
 $CURRENT_EMACS --version
 
-$CURRENT_EMACS --no-window-system --eval "(kill-emacs)" --kill
+$CURRENT_EMACS --no-window-system --batch --load ~/.emacs.d/init.el
