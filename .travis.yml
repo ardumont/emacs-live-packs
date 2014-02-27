@@ -1,5 +1,10 @@
 language: emacs-lisp
+git:
+  # deactivate ci-travis's automatic dealing with submodules when cloning - http://docs.travis-ci.com/user/build-configuration/#Git-Submodules
+  submodules: false
 before_install:
+  # to permit to change the git url to public ones
+  - sed -e 's/git@github.com:/git@github.com\//g' -i .gitmodules
   # - mv Cask Cask.origin
   # - grep -v "marmalade" Cask.origin > Cask
   - if [ "$EMACS" = 'emacs-snapshot' ]; then
