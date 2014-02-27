@@ -30,6 +30,6 @@
                                    "elisp-pack"
                                    "groovy-pack"
                                    "php-pack"
-                                   "ctags-pack"
+;;                                   "ctags-pack"
                                    "prelude-pack"
                                    "stumpwm-pack"))
