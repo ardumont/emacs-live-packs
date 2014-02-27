@@ -10,6 +10,6 @@ echo "CURRENT_EMACS = $CURRENT_EMACS"
 "$CURRENT_EMACS" --version
 #echo "CURRENT_CMD = $CURRENT_CMD"
 
-emacs --version
+$CURRENT_EMACS --version
 
-emacs -nw
+$CURRENT_EMACS -nw -e "(kill-emacs)"
