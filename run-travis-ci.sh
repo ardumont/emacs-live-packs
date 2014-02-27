@@ -12,4 +12,4 @@ echo "CURRENT_EMACS = $CURRENT_EMACS"
 
 $CURRENT_EMACS --version
 
-$CURRENT_EMACS -nw -e "(kill-emacs)"
+$CURRENT_EMACS --daemon -nw --eval "(kill-emacs)"
