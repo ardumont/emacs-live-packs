@@ -5,6 +5,7 @@ git:
 before_install:
   # to permit to change the git url to public ones
   - sed -e 's/git@github.com:/git@github.com\//g' -i .gitmodules
+  - git submodule update --init
   # - mv Cask Cask.origin
   # - grep -v "marmalade" Cask.origin > Cask
   - if [ "$EMACS" = 'emacs-snapshot' ]; then
