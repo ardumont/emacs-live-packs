@@ -1,4 +1,4 @@
-emacs-live-packs
+emacs-live-packs [![Build Status](https://travis-ci.org/ardumont/emacs-live-packs.png?branch=master)](https://travis-ci.org/ardumont/emacs-live-packs)
 ================
 
 My emacs-live packs setup to use with the most excellent [emacs-live](https://github.com/overtone/emacs-live).
