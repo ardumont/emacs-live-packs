@@ -36,7 +36,6 @@ Some packs still need some lovin' but most are ready:
 - [modeline-pack](https://github.com/ardumont/modeline-pack)                  Improve modeline rendering
 - [php-pack](https://github.com/ardumont/php-pack)                            PHP mode
 - [prelude-pack](https://github.com/ardumont/prelude-pack)                    Add some prelude greatness
-- [scratch-pack](https://github.com/ardumont/scratch-pack)                    Tinkering pack
 - [stumpwm-pack](https://github.com/ardumont/stumpwm-pack)                    Stumpwm tinkering from the repl
 
 *Note*
@@ -160,7 +159,7 @@ Loading /etc/emacs/site-start.d/50windows-el.el (source)...done
 ;;         M  MMMMMMMM M  M M  MMMM' .M MM  MMMMMMMM
 ;;         M  MMMMMMMM M  M M  MMP' .MM MM  MMMMMMMM
 ;;         M         M M  M M     .dMMM MM        .M
-;;         MMMMMMMMMMM MMMM MMMMMMMMMMM MMMMMMMMMMMM 
+;;         MMMMMMMMMMM MMMM MMMMMMMMMMM MMMMMMMMMMMM
 
 
 Loading /home/tony/.emacs.d/manifest.el (source)...
@@ -728,7 +727,7 @@ Loading /home/tony/.emacs-live-packs/prelude-pack/init.el (source)...done
 
 
  Pack loading completed. Your Emacs is Live...
-   
-  
+
+
 Starting Emacs daemon.
 ```
