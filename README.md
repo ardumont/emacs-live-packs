@@ -3,7 +3,7 @@ emacs-live-packs [![Build Status](https://travis-ci.org/ardumont/emacs-live-pack
 
 My emacs-live packs setup to use with the most excellent [emacs-live](https://github.com/overtone/emacs-live).
 
-# pack list
+# Pack list
 
 Some packs still need some lovin' but most are ready:
 
@@ -44,11 +44,11 @@ This pack is an orchestrator.
 You still need to setup those packs independently for the overall to be fully functional.
 Report yourself to each pack's README.md file to know what are those steps.
 
-# install
+# Install
 
-## pre-requisite
+## Pre-requisite
 
-### emacs-live
+### Emacs-Live
 
 Install [emacs-live](https://github.com/overtone/emacs-live), you won't regret it!
 
@@ -58,7 +58,7 @@ Long story short:
 git clone git://github.com/overtone/emacs-live.git ~/.emacs.d
 ```
 
-## clone
+## Clone
 
 Clone the repository.
 
@@ -66,9 +66,9 @@ Clone the repository.
 git clone git@github.com:ardumont/emacs-live-packs.git --recursive
 ```
 
-## packs
+## Packs
 
-### default pack needed
+### Default pack needed
 
 If you want to use one of those packs, you need at minimum [install-packages-pack](https://github.com/ardumont/install-packages-pack).
 This one is in charge of setuping different repositories (marmalade, milkbox, elpa, etc...).
@@ -92,7 +92,7 @@ For example, to simply install orgmode-pack and the blog-pack, do as follow:
 
 ```
 
-## deploy
+## Deploy
 
 Launch the deployer:
 
@@ -111,7 +111,7 @@ lrwxrwxrwx 1 tony tony 53 avril 15 15:30 /home/tony/.emacs-live.el -> /home/tony
 lrwxrwxrwx 1 tony tony 39 avril 15 12:38 /home/tony/.emacs-live-packs -> /home/tony/repo/perso/emacs-live-packs/
 ```
 
-## start
+## Start
 
 Now start emacs.
 
