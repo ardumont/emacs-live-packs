@@ -5,6 +5,7 @@
 
 (emacs-live-packs/add-live-packs "~/.emacs-live-packs/"
                                  '("install-packages-pack"
+                                   "theme-pack"
 ;;                                   "el-get-pack"
                                    "buffer-pack"
                                    "scratch-pack"
