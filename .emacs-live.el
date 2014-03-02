@@ -32,5 +32,4 @@
                                    "groovy-pack"
                                    "php-pack"
 ;;                                   "ctags-pack"
-                                   "prelude-pack"
                                    "stumpwm-pack"))
