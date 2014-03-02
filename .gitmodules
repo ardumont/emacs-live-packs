@@ -88,3 +88,6 @@
 [submodule "stumpwm-pack"]
 	path = stumpwm-pack
 	url = git@github.com:ardumont/stumpwm-pack.git
+[submodule "theme-pack"]
+	path = theme-pack
+	url = git@github.com:ardumont/theme-pack.git
