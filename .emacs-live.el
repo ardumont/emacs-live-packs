@@ -4,27 +4,27 @@
   (live-add-packs (mapcar (lambda (pack) (concat path pack)) packs)))
 
 (emacs-live-packs/add-live-packs "~/.emacs-live-packs/"
-                                 '("install-packages-pack";; installing emacs repositories (melpa, milkbox, marmalade) and the install-packs utility function
+                                 '("install-packages-pack"
 ;;                                   "el-get-pack"
-                                   "buffer-pack"          ;; a pack to mess around until drying stuff
+                                   "buffer-pack"
                                    "scratch-pack"
-                                   "blog-pack"            ;; a setup blog pack for wordpress
+                                   "blog-pack"
                                    "haskell-pack"
-                                   "orgmode-pack"         ;; setup org-mode
+                                   "orgmode-pack"
                                    "lisp-pack"
                                    "git-pack"
-                                   "mail-pack"            ;; setup mail credentials
+                                   "mail-pack"
                                    "shell-pack"
                                    "browser-pack"
-                                   "chat-pack"            ;; irc credential setup
+                                   "chat-pack"
                                    "clojure-pack"
-;;                                   "nrepl-pack"           ;; nrepl override bindings from nrepl
+;;                                   "nrepl-pack"
                                    "clojurescript-pack"
                                    "caml-pack"
-                                   "modeline-pack"        ;; adding stuff regarding emacs modeline
+                                   "modeline-pack"
                                    "twitter-pack"
                                    "puppet-pack"
-;;                                   "chrome-pack"          ;; chrome editing textarea using emacs
+;;                                   "chrome-pack"
                                    "macro-pack"
                                    "scala-pack"
                                    "elisp-pack"
