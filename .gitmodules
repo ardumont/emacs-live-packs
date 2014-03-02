@@ -88,3 +88,6 @@
 [submodule "theme-pack"]
 	path = theme-pack
 	url = git@github.com:ardumont/theme-pack.git
+[submodule "prelude-live-pack"]
+	path = prelude-live-pack
+	url = git@github.com:ardumont/prelude-live-pack.git
