@@ -91,3 +91,6 @@
 [submodule "prelude-live-pack"]
 	path = prelude-live-pack
 	url = git@github.com:ardumont/prelude-live-pack.git
+[submodule "pres-pack"]
+	path = pres-pack
+	url = git@github.com:ardumont/pres-pack.git
