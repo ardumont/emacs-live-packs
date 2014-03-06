@@ -37,6 +37,7 @@ Some packs still need some lovin' but most are ready:
 - [php-pack](https://github.com/ardumont/php-pack)                            PHP mode
 - [prelude-pack](https://github.com/ardumont/prelude-pack)                    Add some prelude greatness
 - [stumpwm-pack](https://github.com/ardumont/stumpwm-pack)                    Stumpwm tinkering from the repl
+- [pres-pack](https://github.com/ardumont/pres-pack)                          Pack to make presentation using org-mode and org-reveal
 
 *Note*
 This pack is an orchestrator.
