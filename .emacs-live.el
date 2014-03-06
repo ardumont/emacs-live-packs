@@ -67,6 +67,7 @@
                                    "php-pack"
 ;;                                   "ctags-pack"
                                    "prelude-live-pack"
-                                   "stumpwm-pack"))
+                                   "stumpwm-pack"
+                                   "pres-pack"))
 
 ;;; emacs-live-packs.el ends here
