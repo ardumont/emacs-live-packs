@@ -73,7 +73,7 @@ git clone git@github.com:ardumont/emacs-live-packs.git --recursive
 If you want to use one of those packs, you need at minimum [install-packages-pack](https://github.com/ardumont/install-packages-pack).
 This one is in charge of setuping different repositories (marmalade, milkbox, elpa, etc...).
 
-Also, it installs a utility function `install-packs` to download packages from those repositories.
+Also, it installs a utility function `install-packages-pack/install-packs` to download packages from those repositories.
 This utility function is used throughout all the [referenced packs](#pack-list).
 
 ### Adding/Removing packs
