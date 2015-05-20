@@ -1,4 +1,4 @@
-;;; emacs-live-packs.el --- emacs-live personal packs
+;;; emacs-live-packs.el --- emacs-live user packs
 
 ;; Copyright (C) 2013 Antoine R. Dumont <eniotna.t AT gmail.com>
 
@@ -33,6 +33,28 @@
 ;;; Code:
 
 
+(defun live-load-pack (pack-dir)
+  "Load a live pack. This is a dir that contains at least the
+  files pack-info.el and init.el. Adds the packs's lib dir
+  to the load-path"
+  (message (concat "\n\n==> Loading Emacs Live Pack (ardumont tweaked): " pack-dir ))
+  (let* ((pack-dir         (file-name-as-directory pack-dir))
+         (pack-info        (concat pack-dir "info.el"))
+         (maybe-pack-init  (concat pack-dir "init.el")) ;; default init in emacs-live
+         (maybe-pack-init2 (concat pack-dir "/" pack-dir ".el")) ;; I no longer use emacs-live's convention but emacs'
+         (pack-init        (if (file-exists-p maybe-pack-init) maybe-pack-init maybe-pack-init2)))
+    (setq live-current-pack-dir pack-dir)
+    (live-clear-pack-info)
+    (when (file-exists-p pack-info)
+      (progn
+        (load-file pack-info)
+        (live-print-pack-info)))
+    (add-to-list 'load-path pack-dir)
+    (add-to-list 'load-path (live-pack-lib-dir))
+    (when (file-exists-p pack-init)
+      (load-file pack-init))
+    (setq live-current-pack-dir nil)))
+
 (defun emacs-live-packs/add-live-packs (path packs)
   "Utility function to help in installing emacs-live-packs (bunch of user packs)"
   (live-add-packs (mapcar (lambda (pack) (concat path pack)) packs)))
@@ -40,7 +62,7 @@
 (emacs-live-packs/add-live-packs "~/.emacs-live-packs/"
                                  '("install-packages-pack"
                                    "theme-pack"
-;;                                   "el-get-pack"
+                                   ;;                                   "el-get-pack"
                                    "buffer-pack"
                                    "scratch-pack"
                                    "blog-pack"
@@ -53,21 +75,22 @@
                                    "browser-pack"
                                    "chat-pack"
                                    "clojure-pack"
-;;                                   "nrepl-pack"
+                                   ;;                                   "nrepl-pack"
                                    "clojurescript-pack"
                                    "caml-pack"
                                    "modeline-pack"
                                    "twitter-pack"
                                    "puppet-pack"
-;;                                   "chrome-pack"
+                                   ;;                                   "chrome-pack"
                                    "macro-pack"
                                    "scala-pack"
                                    "elisp-pack"
                                    "groovy-pack"
                                    "php-pack"
-;;                                   "ctags-pack"
+                                   ;;                                   "ctags-pack"
                                    "prelude-live-pack"
                                    "stumpwm-pack"
                                    "pres-pack"))
 
+(provide 'emacs-live-packs)
 ;;; emacs-live-packs.el ends here
