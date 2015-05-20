@@ -34,10 +34,10 @@
 
 
 (defun live-load-pack (pack-dir)
-  "Load a live pack. This is a dir that contains at least the
-  files pack-info.el and init.el. Adds the packs's lib dir
-  to the load-path"
-  (message (concat "\n\n==> Loading Emacs Live Pack (ardumont tweaked): " pack-dir ))
+  "Load a live pack. This is a dir that could contain either the
+  files info.el and init.el or `pack-name`.el. Adds the packs's
+  dir and lib dir to the load-path"
+  (message (concat "\n\n==> Loading Emacs Live Pack: " pack-dir ))
   (let* ((pack-dir         (file-name-as-directory pack-dir))
          (pack-info        (concat pack-dir "info.el"))
          (maybe-pack-init  (concat pack-dir "init.el")) ;; default init in emacs-live
