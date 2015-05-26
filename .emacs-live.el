@@ -36,6 +36,18 @@
 ;;
 ;; Read only
 ;;
+
+(defun emacs-live-packs/add-live-packs (parent-dir)
+ "Add all level PARENT-DIR subdirs to the `load-path'."
+ (dolist (f (directory-files parent-dir))
+   (let ((name (expand-file-name f parent-dir)))
+     (when (and (file-directory-p name)
+                (not (string-prefix-p "." f)))
+       (add-to-list 'load-path name)
+       (emacs-live-packs/add-live-packs name)))))
+
+(emacs-live-packs/add-live-packs emacs-live-packs/home)
+
 (defun live-load-pack (pack-dir)
   "Load a live pack. This is a dir that could contain either the
   files info.el and init.el or `pack-name`.el. Adds the packs's
@@ -106,11 +118,16 @@
                                       "stumpwm-pack"
                                       "pres-pack")
   "User's packs. Feel free to comment out the ones you do not want.")
+
 ;;
 ;; Read only
 ;;
 
 ;; (emacs-live-packs/add-live-packs emacs-live-packs/home
 ;;                                  emacs-live-packs/user-packs)
+
+(mapc (lambda (pack-name-str)
+        (require (intern pack-name-str) nil 'no-error)) emacs-live-packs/user-packs)
+
 (provide 'emacs-live-packs)
 ;;; emacs-live-packs.el ends here
