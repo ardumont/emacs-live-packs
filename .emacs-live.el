@@ -33,15 +33,19 @@
 ;;; Code:
 
 
+;;
+;; Read only
+;;
 (defun live-load-pack (pack-dir)
   "Load a live pack. This is a dir that could contain either the
   files info.el and init.el or `pack-name`.el. Adds the packs's
   dir and lib dir to the load-path"
-  (message (concat "\n\n==> Loading Emacs Live Pack: " pack-dir ))
-  (let* ((pack-dir         (file-name-as-directory pack-dir))
+  (message (concat "\n\n==> Loading Emacs Live Pack: " pack-dir))
+  (let* ((pack-name        (file-name-base (substring pack-dir 0 (1- (length pack-dir))))) ;; hurk
+         (pack-dir         (file-name-as-directory pack-dir))
          (pack-info        (concat pack-dir "info.el"))
          (maybe-pack-init  (concat pack-dir "init.el")) ;; default init in emacs-live
-         (maybe-pack-init2 (concat pack-dir "/" pack-dir ".el")) ;; I no longer use emacs-live's convention but emacs'
+         (maybe-pack-init2 (concat pack-dir pack-name ".el")) ;; I no longer use emacs-live's convention but emacs'
          (pack-init        (if (file-exists-p maybe-pack-init) maybe-pack-init maybe-pack-init2)))
     (setq live-current-pack-dir pack-dir)
     (live-clear-pack-info)
@@ -57,40 +61,56 @@
 
 (defun emacs-live-packs/add-live-packs (path packs)
   "Utility function to help in installing emacs-live-packs (bunch of user packs)"
-  (live-add-packs (mapcar (lambda (pack) (concat path pack)) packs)))
+  (live-add-packs (mapcar (lambda (pack)
+                            (expand-file-name (format "%s/%s" path pack)))
+                          packs)));; let emacs-live load the pack
 
-(emacs-live-packs/add-live-packs "~/.emacs-live-packs/"
-                                 '("install-packages-pack"
-                                   "theme-pack"
-                                   ;;                                   "el-get-pack"
-                                   "buffer-pack"
-                                   "scratch-pack"
-                                   "blog-pack"
-                                   "haskell-pack"
-                                   "orgmode-pack"
-                                   "lisp-pack"
-                                   "git-pack"
-                                   "mail-pack"
-                                   "shell-pack"
-                                   "browser-pack"
-                                   "chat-pack"
-                                   "clojure-pack"
-                                   ;;                                   "nrepl-pack"
-                                   "clojurescript-pack"
-                                   "caml-pack"
-                                   "modeline-pack"
-                                   "twitter-pack"
-                                   "puppet-pack"
-                                   ;;                                   "chrome-pack"
-                                   "macro-pack"
-                                   "scala-pack"
-                                   "elisp-pack"
-                                   "groovy-pack"
-                                   "php-pack"
-                                   ;;                                   "ctags-pack"
-                                   "prelude-live-pack"
-                                   "stumpwm-pack"
-                                   "pres-pack"))
+;; will need this for forcing the loading of the packs.
+(setq custom-file "~/.emacs-live-packs/load-packs.el")
 
+;;
+;; Edit this part as you please (just keep the install-packages-pack)
+;;
+(defvar emacs-live-packs/home "~/.emacs-live-packs"
+  "Home of the emacs-live-packs.")
+
+(defvar emacs-live-packs/user-packs '("install-packages-pack"
+                                      "theme-pack"
+                                      ;;                                   "el-get-pack"
+                                      "buffer-pack"
+                                      "scratch-pack"
+                                      "blog-pack"
+                                      "haskell-pack"
+                                      "orgmode-pack"
+                                      "lisp-pack"
+                                      "git-pack"
+                                      "mail-pack"
+                                      "shell-pack"
+                                      "browser-pack"
+                                      "chat-pack"
+                                      "clojure-pack"
+                                      ;;                                   "nrepl-pack"
+                                      "clojurescript-pack"
+                                      "caml-pack"
+                                      "modeline-pack"
+                                      "twitter-pack"
+                                      "puppet-pack"
+                                      ;;                                   "chrome-pack"
+                                      "macro-pack"
+                                      "scala-pack"
+                                      "elisp-pack"
+                                      "groovy-pack"
+                                      "php-pack"
+                                      ;;                                   "ctags-pack"
+                                      "prelude-live-pack"
+                                      "stumpwm-pack"
+                                      "pres-pack")
+  "User's packs. Feel free to comment out the ones you do not want.")
+;;
+;; Read only
+;;
+
+;; (emacs-live-packs/add-live-packs emacs-live-packs/home
+;;                                  emacs-live-packs/user-packs)
 (provide 'emacs-live-packs)
 ;;; emacs-live-packs.el ends here
