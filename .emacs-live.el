@@ -43,7 +43,7 @@
     (let ((name (expand-file-name f parent-dir)))
       (when (and (file-directory-p name)
                  (not (string-prefix-p "." f)))
-        (add-to-list 'load-path name)
+        (add-to-list 'load-path name 'append)
         (emacs-live-packs/add-live-packs name)))))
 
 (defvar emacs-live-packs/home "~/.emacs-live-packs"
